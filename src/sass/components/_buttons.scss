@@ -55,7 +55,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-@media screen and (min-width: $desktop-size) {
+@media screen and (min-width: $desktop) {
     padding: 14px 35px;
 }
 
@@ -87,7 +87,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-@media screen and (min-width: $tablet-size) {
+@media screen and (min-width: $tablet) {
     padding: 18px 38px;
     font-size: 24px;
     line-height: 1.208;
@@ -120,7 +120,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-@media screen and (min-width: $tablet-size) {
+@media screen and (min-width: $tablet) {
     padding: 18px 117px;
     font-size: 24px;
     line-height: 1.208;
