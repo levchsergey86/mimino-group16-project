@@ -1,8 +1,19 @@
 .container {
-    padding-right: 47px;
-    padding-left: 47px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @include for-size(tablet) {   
+        padding-right: 47px;
+        padding-left: 47px;
+     }
+
+     @include for-size(desktop) {   
+        padding-right: 88px;
+        padding-left: 88px;
+     }  
+   
 }
 
 .visually-hidden {
