@@ -4,15 +4,17 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include for-size($tablet) {   
-        padding-right: 47px;
-        padding-left: 47px;
-     }
+    @media screen and (min-width: $tablet) {
 
-     @include for-size($desktop) {   
-        padding-right: 85px;
-        padding-left: 85px;
-     }  
+        width: $tablet;
+        
+      }
+  
+      @media screen and (min-width: $desktop) {
+  
+        width: $desktop;
+        
+      }
    
 }
 
