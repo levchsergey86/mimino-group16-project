@@ -4,14 +4,14 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include for-size(tablet) {   
+    @include for-size($tablet) {   
         padding-right: 47px;
         padding-left: 47px;
      }
 
-     @include for-size(desktop) {   
-        padding-right: 88px;
-        padding-left: 88px;
+     @include for-size($desktop) {   
+        padding-right: 85px;
+        padding-left: 85px;
      }  
    
 }
@@ -30,7 +30,7 @@
   }
 
 body {
-    font-family: montserrat, sans-serif;
-    color: var(--main-text-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var($main-text-color);
     margin: 0px;
 }
