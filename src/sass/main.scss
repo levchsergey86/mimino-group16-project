@@ -1,12 +1,13 @@
-@import './base/base';
-@import './base/reset';
-@import './base/fonts';
-
-@import './common';
-
+@import './abstracts/variables';
 @import './abstracts/mixins';
 @import './abstracts/placeholder';
-@import './abstracts/variables';
+
+@import './base/fonts';
+@import './base/base';
+@import './base/reset';
+
+
+@import './common';
 
 @import './components/buttons';
 
@@ -17,5 +18,4 @@
 @import './pages/main-page/main-page';
 @import './pages/restaurant-page/restaurant';
 @import './pages/hotel-page/hotel';
-@import './pages/hotel-page/section-3-adult-room';
-@import './pages/room-page/';
+@import './pages/room-page/room';
