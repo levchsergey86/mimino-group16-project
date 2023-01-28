@@ -1,1 +1,0 @@
-{"mappings":"","sources":["restaurant.b0f32d07.css","src/sass/pages/restaurant-page/_restaurant.scss"],"sourcesContent":["\n\n/*# sourceMappingURL=restaurant.b0f32d07.css.map */\n","@import './section-hero-restaurant';\n@import './section-about-kitchen';\n@import './section-menu';"],"names":[],"version":3,"file":"restaurant.b0f32d07.css.map"}
