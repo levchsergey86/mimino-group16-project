@@ -1,0 +1,63 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+}
+
+
+
+body {
+    font-family: montserrat, sans-serif;
+    color: var(--main-text-color);
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+address {
+	font-style: normal;
+}
+
+.container {
+    padding-right: 47px;
+    padding-left: 47px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 414px) {
+        width: 414px;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 1280px;
+    }
+}
