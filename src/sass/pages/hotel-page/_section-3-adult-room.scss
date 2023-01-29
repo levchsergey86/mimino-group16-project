@@ -1,3 +1,254 @@
 .roomForThree {
-    outline: 1px solid red;
+    background-color: $main-background-color;
+    min-width: 414px;
+    // outline: 1px solid red;
+    // padding: 32px 15px;
+    // background: $second-background-color;
 }
+
+.room-list {
+    // padding: 32px 15px;
+    // width: 100%;
+
+}
+
+.room-list__item {
+    width: 414px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    & .container {
+        overflow: hidden;
+    }
+
+    &:nth-child(odd) {
+        background-color: $second-background-color;
+
+        .section-description {
+            max-width: 242px;
+        }
+
+        .room-list__item-slider {
+            left: 115px;
+        }
+
+        .section-subtitle {
+            text-align: right;
+        }
+
+        .logo {
+            text-align: right;
+        }
+
+        .section-title {
+            text-align: right;
+        }
+    }
+
+    &:nth-child(even) {
+
+        // .container {
+        .room-list__item-slider {
+            right: 115px;
+            // }
+        }
+
+        .room-list__image {
+            margin-left: 145px;
+            margin-right: 0;
+        }
+
+        .section-description {
+            max-width: 242px;
+        }
+
+        .room-list__item-slider {
+            // left: 115px;
+        }
+
+        .section-subtitle {
+            text-align: left;
+        }
+
+        .logo {
+            text-align: left;
+        }
+
+        .section-title {
+            text-align: left;
+        }
+
+        .room-list__button-slider {
+            justify-content: normal;
+        }
+    }
+
+
+    // &:nth-child(even) {
+    //     .room-list__image{
+    //         margin-left: 145px;
+    //         margin-right: 0;
+    //     }
+    // }
+
+}
+
+.room-list__image {
+    // position: absolute;
+    width: 244px;
+    // height: 322px;
+    // left: 15px;
+    // top: 286px;
+    margin-bottom: 32px;
+    background: $shadow-image-color;
+    /* shadow_little */
+
+    box-shadow: 2px 2px 60px 2px $shadow-color;
+    border-radius: 2px;
+    // height: 100%;
+}
+
+.section-subtitle {
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    color: $title-text-color;
+    // text-align: right;
+}
+
+.logo {
+    margin-bottom: 32px;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    /* identical to box height */
+
+    letter-spacing: 0.3em;
+
+    color: $logo-text-color;
+}
+
+.section-title {
+    margin-bottom: 12px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    /* Black */
+
+    color: #000000;
+}
+
+.section-description {
+    margin-bottom: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+
+    color: #7A7A7A;
+}
+
+.room-list__item-slider {
+    position: relative;
+    // left: 115px;
+    // margin-left: 115px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.room-list__item-image {
+    background-color: $shadow-image-color;
+    /* shadow_little */
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.room-list__button-slider {
+    display: flex;
+    margin-bottom: 20px;
+    // text-align: right;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+// .room-list__item:nth-child(odd) {
+// .container {
+// .room-list__item-slider {
+//     left: 115px;
+// }
+// }
+// }
+
+// .room-list__item:nth-child(even) {
+//     .container {
+//         .room-list__item-slider {
+//             right: 115px;
+//         }
+//     }
+// }
+
+.room-list__button-prev {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    // margin-right: 32px;
+}
+
+.room-list__button-next {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+}
+
+.room-list__button-prev_icon {
+    width: 100%;
+    height: 100%;
+
+}
+
+.room-list__button-next_icon {
+    width: 100%;
+    height: 100%;
+}
+
+.room-list__button-more {
+    // margin: auto 0;
+    width: 236px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.room-list__button-detail {
+    display: block;
+    margin-bottom: 16px;
+}
+
+
+
+// .room-list__item:nth-child(even) {
+
+//     .room-list__item-slider {
+//         position: relative;
+//         right: 115px;
+//         // margin-left: 115px;
+//         margin-bottom: 20px;
+//         display: flex;
+//         gap: 16px;
+//     }
+// }
