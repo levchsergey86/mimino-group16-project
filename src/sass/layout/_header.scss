@@ -40,29 +40,22 @@
     }
 
     &__menu {
-
-        // @media screen and (min-width: 346px) {
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: space-between;
-        // }
-
         @media screen and (min-width: $mobile) {
             display: flex;
             align-items: center;
-            // было 52, ставлю 42  
+            //в макете 52, ставлю 42 из-за пробела в конце mimiho 
             margin-left: 42px;
             gap: 20px;
 
         }
 
-        // было 207, ставлю 196               
+        //в макете 207, ставлю 196 из-за пробела в конце mimiho
         @media screen and (min-width: $tablet) {
             margin-left: 196px;
             gap: 72px;
         }
 
-        // было 135, ставлю 124
+        //в макете 135, ставлю 124 из-за пробела в конце mimiho
         @media screen and (min-width: $desktop) {
             margin: 0 140px 0 124px;
             
@@ -96,10 +89,6 @@
             line-height: 1.2;
         }
 
-        // @media screen and (min-width: $desktop) {
-        //     padding: 36px 0 40px 0;
-
-        // }
         color: $accent-color;
         text-decoration: none;
     }
@@ -110,14 +99,9 @@
         color: $primary-color;
     }
 
-    &__phone-thumb {
-        @media  screen and (min-width: $tablet) {
-            width: 144px;
-            height: 40px;
-        }
-    }
-
+ 
     &__phone-link {
+       
         display: flex;
         align-items: center;
         gap: 4px;
@@ -125,8 +109,10 @@
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width: $tablet) {
+            width: 144px;
+            height: 40px;
             border: $accent-color solid 1px;
-            padding: 12px 8px;
+            padding: 7px 7px;
             transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
