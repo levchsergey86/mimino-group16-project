@@ -2,4 +2,145 @@
     max-width: $desktop;
     margin-left: auto;
     margin-right: auto;
+
+    padding-top: 36px;
+    padding-bottom: 32px;
+
+    background-color: $main-background-color;
+
+    &__title{
+        font-family: 'Film P3';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.075;
+        letter-spacing: 0.3em;
+    
+        color: $logo-text-color;
+
+        margin-bottom: 12px;
+    }
+
+    &__header{
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+    
+        color: $main-text-color;
+        margin-bottom: 16px;
+    }
+
+    &__address {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+
+    &__department-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__department-text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+
+        
+        color: $second-text-color;
+    }
+        
+
+    &__details-list{
+    //     display: flex;
+    //         gap: 8px;
+    }
+
+    &__details-item:not(:last-child){
+        margin-bottom: 16px;
+    }
+    &__details-thumb{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 7px 6px 7px;
+
+        border: 0.5px solid $accent-color;
+        border-radius: 2px;
+        background-color: $primary-color; 
+    }
+
+    &__details-thumb--restaurant{
+        width: 144px;
+        height: 40px;
+    }
+
+    &__details-thumb--hotel {
+        width: 260px;
+        height: 40px;
+    }
+
+    &__details-location--address {
+        width: 260px;
+        height:76px;
+    }
+
+
+    &__location-thumb {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 7px 32px 6px 9px;
+
+        border: 0.5px solid $accent-color;
+        border-radius: 2px;
+        background-color: $primary-color;
+
+    }
+
+    &__phone{
+        color: $logo-text-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2143;
+           
+        letter-spacing: 0.02em;
+
+    }
+    
+    &__phone-icon{
+        fill: $second-text-color;
+    }
+
+    &__phone-thumb{
+        display: flex;
+        gap: 12px;
+    }
+  
+    &__location{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+    
+        color: $logo-text-color;
+    }
+
+    &__location-icon{
+        fill: $second-text-color;
+    }
+
+    &__map{
+        display:block;
+        width: 384px;
+        height: 220px;
+        border: 1px solid $third-text-color;
+        box-shadow: 2px 2px 60px 2px $shadow-color;
+        border-radius: 2px;
+
+       
+    }
 }
+
