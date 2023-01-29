@@ -1,9 +1,17 @@
 .roomForThree {
     background-color: $main-background-color;
-    min-width: 414px;
+    max-width: 414px;
+
     // outline: 1px solid red;
     // padding: 32px 15px;
     // background: $second-background-color;
+    @include for-size(tablet) {
+        width: $tablet;
+    }
+
+    @include for-size(desktop) {
+        width: $desktop;
+    }
 }
 
 .room-list {
@@ -13,7 +21,7 @@
 }
 
 .room-list__item {
-    width: 414px;
+    max-width: 414px;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -21,11 +29,12 @@
         overflow: hidden;
     }
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
         background-color: $second-background-color;
 
         .section-description {
             max-width: 242px;
+            margin-left: 83px;
         }
 
         .room-list__item-slider {
@@ -45,7 +54,7 @@
         }
     }
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
 
         // .container {
         .room-list__item-slider {
@@ -59,7 +68,8 @@
         }
 
         .section-description {
-            max-width: 242px;
+            max-width: 258px;
+            margin-left: 0;
         }
 
         .room-list__item-slider {
@@ -140,14 +150,19 @@
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 28px;
+    // line-height: 28px;
+    line-height: 1.17;
     /* identical to box height */
 
     letter-spacing: 0.05em;
 
     /* Black */
+    text-transform: uppercase;
+    color: $secondary-color;
+}
 
-    color: #000000;
+.lower {
+    text-transform: lowercase;
 }
 
 .section-description {
@@ -156,7 +171,8 @@
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-    line-height: 15px;
+    // line-height: 15px;
+    line-height: 1.25;
     letter-spacing: 0.02em;
 
     color: #7A7A7A;
