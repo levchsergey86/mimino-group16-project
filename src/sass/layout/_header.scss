@@ -138,11 +138,12 @@
 
     &__phone-number {
         display: none;
-        color: $primary-color;
+       
 
         @media screen and (min-width: $tablet) {
             display: block;
-           
+            color: $primary-color;
+            text-align: center;           
             font-weight: 400;
             font-size: 14px;
             line-height: 1.2143;
