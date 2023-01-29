@@ -1,50 +1,153 @@
-<div data-popup-target="presentation" class="popup">
-    <div class="popup__body">
-        <div class="popup__content">
-            <button type="button" class="popup__close close-popup">X</button>
-            <div class="popup__title"><strong>Модалка 1</strong></div>
-            <div class="popup__text">
-                ipsum dolor sit amet consectetur adipisicing elit.
-                Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam
-                dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+<!-- Table -->
+
+<div class="backdrop__modal-table is-hidden">
+    <div class="modal modal__table">
+        <button class="button-close" type="button">
+            <svg class="button-close__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h3 class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</h3>
+        <form name="book-table-form" class="modal__form">
+
+        <div class="modal__form-field">
+            <div>
+            <input class="modal__form-field__input" placeholder="Ваше ім’я" id="user-name" type="text" title="Поле повинно містити ім'я." pattern="[Є-Яа-ї]+" required>
             </div>
+            <label class="modal__form-field__label" for="user-name">На кого забронювати столик?</label>
         </div>
+            
+        <div class="modal__form-field">
+            <div>
+            <input class="modal__form-field__input" placeholder="+38 (___) ___-__-__" id="user-phone" type="tel"
+                title="Поле повинно містити телефон (+380)."
+                pattern="\+?[0-9\s\-\(\)]+"
+                minlength="13"
+                maxlength="13"
+                required>
+            </div>
+            <label class="modal__form-field__label" for="user-phone">Номер телефону</label>
+        </div>
+
+        <div class="modal__form-field">
+            <div>
+            <select class="modal__form-field__input" placeholder="2" name="amount-people" id="amount-people" type="number">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+            <label class="modal__form-field__label" for="amount-people">Столик на яку кількість осіб?</label>
+        </div>
+
+        <div class="modal__form-field__last">
+            <div>
+            <select class="modal__form-field__input" placeholder="Сьогодні" name="tabel-book-date" id="tabel-book-date" type="text">
+                <option value="Сьогодні" selected>Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+            </select>
+            </div>
+            <label class="modal__form-field__label" for="tabel-book-date">На яку дату бронювати?</label>
+        </div>
+            <button class="modal-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+        </form>
     </div>
 </div>
-<div data-popup-target="test-modal" class="popup">
-    <div class="popup__body">
-        <div class="popup__content">
-            <button type="button" class="popup__close close-popup">X</button>
-            <div class="popup__title"><strong>Модалка 2</strong></div>
-            <div class="popup__text">
-                ipsum dolor sit amet consectetur adipisicing elit.
-                Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam
-                dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+
+<!-- Room -->
+
+<div class="backdrop__modal-room">
+    <div class="modal modal__room">
+        <button class="button-close" type="button">
+            <svg class="button-close__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h3 class="modal__title">ЗАБРОНЮВАТИ НОМЕР</h3>
+        <form name="book-table-form" class="modal__form">
+
+        <div class="modal__form-field">
+            <div>
+            <input class="modal__form-field__input" placeholder="Ваше ім’я" id="user-name" type="text" title="Поле повинно містити ім'я." pattern="[Є-Яа-ї]+" required>
             </div>
+            <label class="modal__form-field__label" for="user-name">На кого забронювати номер?</label>
         </div>
+            
+        <div class="modal__form-field">
+            <div>
+            <input class="modal__form-field__input" placeholder="+38 (___) ___-__-__" id="user-phone" type="tel"
+            title="Поле повинно містити телефон (+380)."
+            pattern="\+?[0-9\s\-\(\)]+"
+            minlength="13"
+            maxlength="13"
+            required>
+            </div>
+            <label class="modal__form-field__label" for="user-phone">Номер телефону</label>
+        </div>
+
+        <div class="modal__form-field">
+            <div>
+            <select class="modal__form-field__input" placeholder="Двомісний люкс" name="room-book-name" id="room-book-name" type="text">
+                <option value="Двомісний люкс" selected>Двомісний люкс</option>
+                <option value="Трьохмісний Люкс">Трьохмісний Люкс</option>
+            </select>
+            </div>
+            <label class="modal__form-field__label" for="room-book-name">Категорія номеру</label>
+        </div>
+
+        <div class="modal__form-field">
+            <div>
+            <select class="modal__form-field__input" placeholder="Сьогодні" name="room-book-date" id="room-book-date" type="text">
+                <option value="Сьогодні" selected>Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+            </select>
+            </div>
+            <label class="modal__form-field__label" for="room-book-date">Дата заїзду</label>
+        </div>
+
+        <div class="modal__form-field__last">
+            <div>
+            <select class="modal__form-field__input" placeholder="Сьогодні" name="room-book-datefree" id="room-book-datefree" type="text">
+                <option value="Сьогодні" selected>Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+            </select>
+            </div>
+            <label class="modal__form-field__label" for="room-book-datefree">Дата виїзду</label>
+        </div>
+            <button class="modal-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+        </form>
+    </div>
+</div>
+
+<!-- Price -->
+
+<div class="backdrop__modal-price is-hidden">
+    <div class="modal modal__price">
+        <button class="button-close" type="button">
+            <svg class="button-close__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h3 class="modal__title">ЦІНИ НА НОМЕР</h3>
+        <h4 class="modal__room-name">Двомісний люкс</h4>
+        <p class="modal__room-category">Категорія номеру</p>
+        <form name="book-table-form" class="modal__form">
+
+        <div class="modal__form-field">
+            <div>
+            <input class="modal__form-field__input" placeholder="1" id="amount-nights" type="number" pattern="[1-9]+" required min="1" max="14">
+            </div>
+            <label class="modal__form-field__label" for="amount-nights">Кількість ночей</label>
+        </div>
+             
+        <div class="modal__form-field__last">
+            <div>
+            <input class="modal__form-field__input" placeholder="1000" id="price" type="number">
+            </div>
+            <label class="modal__form-field__label" for="price">грн</label>
+        </div>
+            <button class="modal-btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+        </form>
     </div>
 </div>
