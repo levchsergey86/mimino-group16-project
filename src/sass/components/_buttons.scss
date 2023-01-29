@@ -131,3 +131,35 @@
     }
 
 }
+
+
+.arrow-hero {
+    display: block;
+    padding: 0;
+    height: 40px;
+    
+    background-color: $arrow-hero-background;
+    border: 0;
+    fill: $accent-color;
+}
+
+
+.arrow-swiper {
+
+    display: block;
+    padding: 0;
+    background: none;
+    border: 0;
+
+    fill: $secondary-color;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        @extend %arrow-hvr;
+    }
+
+}
