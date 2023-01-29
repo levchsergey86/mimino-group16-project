@@ -104,13 +104,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 display: block;
 margin: 0 auto;
 
+width: 100%;
+height: auto;
+max-width: 384px;
+
 padding: 20px 43px;
 text-align: center;
 
 font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
+font-size: 19px;
 line-height: 1.2;
 
 background-color: $secondary-color;
@@ -122,11 +126,8 @@ transition-property: background-color, color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
-@media screen and (min-width: $tablet) {
-    padding: 18px 117px;
-    font-size: 24px;
-    line-height: 1.208;
+@media (min-width:780px) {
+    min-width: 592px;
 }
 
 &:hover,

@@ -1,14 +1,18 @@
 <!-- Table -->
 
-<div class="backdrop__modal-table is-hidden">
+<div class="backdrop is-hidden">
     <div class="modal modal__table">
         <button class="button-close" type="button">
-            <svg class="button-close__icon" width="24" height="24">
+            <svg class="button-close__icon" width="22" height="22">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
         <h3 class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</h3>
         <form name="book-table-form" class="modal__form">
+
+            <div class="box-box-box">
+
+            <div class="box-form-table">
 
         <div class="modal__form-field">
             <div>
@@ -28,6 +32,9 @@
             </div>
             <label class="modal__form-field__label" for="user-phone">Номер телефону</label>
         </div>
+    </div>
+
+    <div class="box-form-table__last">
 
         <div class="modal__form-field">
             <div>
@@ -50,6 +57,8 @@
             </div>
             <label class="modal__form-field__label" for="tabel-book-date">На яку дату бронювати?</label>
         </div>
+    </div>
+</div>
             <button class="modal-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
         </form>
     </div>
@@ -57,15 +66,16 @@
 
 <!-- Room -->
 
-<div class="backdrop__modal-room">
+<div class="backdrop is-hidden">
     <div class="modal modal__room">
         <button class="button-close" type="button">
-            <svg class="button-close__icon" width="24" height="24">
+            <svg class="button-close__icon" width="22" height="22">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
         <h3 class="modal__title">ЗАБРОНЮВАТИ НОМЕР</h3>
         <form name="book-table-form" class="modal__form">
+            <div class="box-form-room">
 
         <div class="modal__form-field">
             <div>
@@ -86,6 +96,10 @@
             <label class="modal__form-field__label" for="user-phone">Номер телефону</label>
         </div>
 
+        </div>
+
+        <div class="box-form-room">
+
         <div class="modal__form-field">
             <div>
             <select class="modal__form-field__input" placeholder="Двомісний люкс" name="room-book-name" id="room-book-name" type="text">
@@ -95,6 +109,10 @@
             </div>
             <label class="modal__form-field__label" for="room-book-name">Категорія номеру</label>
         </div>
+
+    </div>
+
+    <div class="box-form-room__last">
 
         <div class="modal__form-field">
             <div>
@@ -115,6 +133,7 @@
             </div>
             <label class="modal__form-field__label" for="room-book-datefree">Дата виїзду</label>
         </div>
+    </div>
             <button class="modal-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
         </form>
     </div>
@@ -122,10 +141,10 @@
 
 <!-- Price -->
 
-<div class="backdrop__modal-price is-hidden">
+<div class="backdrop is-hidden">
     <div class="modal modal__price">
         <button class="button-close" type="button">
-            <svg class="button-close__icon" width="24" height="24">
+            <svg class="button-close__icon" width="22" height="22">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
@@ -133,10 +152,17 @@
         <h4 class="modal__room-name">Двомісний люкс</h4>
         <p class="modal__room-category">Категорія номеру</p>
         <form name="book-table-form" class="modal__form">
+            <div class="box-form-price">
 
+            
         <div class="modal__form-field">
             <div>
-            <input class="modal__form-field__input" placeholder="1" id="amount-nights" type="number" pattern="[1-9]+" required min="1" max="14">
+                <select class="modal__form-field__input" placeholder="1" name="amount-nights" id="amount-nights" type="number">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                    <option value="2">4</option>
+                </select>
             </div>
             <label class="modal__form-field__label" for="amount-nights">Кількість ночей</label>
         </div>
@@ -147,6 +173,8 @@
             </div>
             <label class="modal__form-field__label" for="price">грн</label>
         </div>
+            </div>
+
             <button class="modal-btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
         </form>
     </div>
