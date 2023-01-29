@@ -5,12 +5,16 @@
     margin-right: auto;
 
     @media screen and (min-width: $tablet) {
+      padding-right: 47px;
+      padding-left: 47px;
 
         width: $tablet;
         
       }
   
       @media screen and (min-width: $desktop) {
+        padding-right: 85px;
+        padding-left: 85px;
   
         width: $desktop;
         
