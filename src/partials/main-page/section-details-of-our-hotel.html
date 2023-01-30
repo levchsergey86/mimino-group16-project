@@ -1,36 +1,193 @@
 <section class="hotel-details">
   <div class="hotel-details__container">
+    <h2 class="visually-hidden">Hotel Details</h2>
     <div class="hotel-details__info">
-      <h2 class="hotel-details__tittle">
+      <h2 class="hotel-details__logo">
         <!-- назва класу може бути інша так як стиль повторюється в інших секціях можливо потрібно привести до одного-->
-        <a href="/src/index.html" class="hotel-details">mimino</a>
+        <a href="/src/index.html" class="hotel-details">mimiho</a>
       </h2>
-      <h3 class="hotel-details__sub-title">Готель</h3>
+      <h3 class="hotel-details__title">Готель</h3>
       <p class="hotel-details__description">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit.
       </p>
     </div>
-    <div class="hotel-details__buttons">
-        <button type="button" class="btn_book-room">Забронювати номер</button>
-        <button type="button" class="btn_price">Переглянути ціни</button>
 
-    </div>
+    <!--SLIDER FOR DETAIL HOTEL -->
+    <div class="hotel_details__slider-wrapper" data-slider="team-slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
 
-    <div class="hotel_details__slider-wrapper">
-        <div class="hotel_details__triple-slider slick slick-initialized slick-slider">
-            <div class="slick-list draggable">
-                <div class="slick-track" style="opacity: 1; width: 15000px; transform: translate3d(-1208px, 0px, 0px);">
-                    <div class="hotel_details__slick-item slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1">
-                        <picture class="slick__box">
-                            <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/breakfast.c190940e.webp    1x, /go_it_bl03_mimino/breakfast@2x.7f6141bc.webp 2x" type="image/webp">
-                            <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/breakfast.633f8153.jpg    1x, /go_it_bl03_mimino/breakfast@2x.857e2024.jpg 2x" type="image/jpeg">
-                            <img class="slick__box" src="/go_it_bl03_mimino/breakfast.633f8153.jpg" alt="сніданок із бельгійської вафлі, яєшні і апельсинового соку">
-                        </picture> </div><div class="hotel_details__slick-item slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1">
-                            <picture class="slick__box"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/reception.4bf68a35.webp    1x, /go_it_bl03_mimino/reception@2x.0ef437d0.webp 2x" type="image/webp"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/reception.51a8a51f.jpg    1x, /go_it_bl03_mimino/reception@2x.cc73edce.jpg 2x" type="image/jpeg">
-                                <img class="slick__box" src="/go_it_bl03_mimino/reception.51a8a51f.jpg" alt="відвідувачка готелю із валізою біля ресепшену"> </picture> </div><div class="hotel_details__slick-item slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1"> <picture class="slick__box"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/bedroom.be4cd946.webp    1x, /go_it_bl03_mimino/bedroom@2x.ac2c6341.webp 2x" type="image/webp"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/bedroom.18dfe37e.jpg    1x, /go_it_bl03_mimino/bedroom@2x.4c0b10be.jpg 2x" type="image/jpeg"> <img class="slick__box" src="/go_it_bl03_mimino/bedroom.18dfe37e.jpg" alt="спяльня для закоханих із великим двомісним ліжком"> </picture> </div><div class="hotel_details__slick-item slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1"> <picture class="slick__box"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/breakfast.c190940e.webp    1x, /go_it_bl03_mimino/breakfast@2x.7f6141bc.webp 2x" type="image/webp"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/breakfast.633f8153.jpg    1x, /go_it_bl03_mimino/breakfast@2x.857e2024.jpg 2x" type="image/jpeg"> <img class="slick__box" src="/go_it_bl03_mimino/breakfast.633f8153.jpg" alt="сніданок із бельгійської вафлі, яєшні і апельсинового соку"> </picture> </div><div class="hotel_details__slick-item slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" tabindex="0"> <picture class="slick__box"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/reception.4bf68a35.webp    1x, /go_it_bl03_mimino/reception@2x.0ef437d0.webp 2x" type="image/webp"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/reception.51a8a51f.jpg    1x, /go_it_bl03_mimino/reception@2x.cc73edce.jpg 2x" type="image/jpeg"> <img class="slick__box" src="/go_it_bl03_mimino/reception.51a8a51f.jpg" alt="відвідувачка готелю із валізою біля ресепшену"> </picture> </div><div class="hotel_details__slick-item slick-slide slick-cloned slick-active" data-slick-index="3" aria-hidden="false" tabindex="-1"> <picture class="slick__box"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/bedroom.be4cd946.webp    1x, /go_it_bl03_mimino/bedroom@2x.ac2c6341.webp 2x" type="image/webp"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/bedroom.18dfe37e.jpg    1x, /go_it_bl03_mimino/bedroom@2x.4c0b10be.jpg 2x" type="image/jpeg"> <img class="slick__box" src="/go_it_bl03_mimino/bedroom.18dfe37e.jpg" alt="спяльня для закоханих із великим двомісним ліжком"> </picture> </div><div class="hotel_details__slick-item slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1"> <picture class="slick__box"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/breakfast.c190940e.webp    1x, /go_it_bl03_mimino/breakfast@2x.7f6141bc.webp 2x" type="image/webp"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/breakfast.633f8153.jpg    1x, /go_it_bl03_mimino/breakfast@2x.857e2024.jpg 2x" type="image/jpeg"> <img class="slick__box" src="/go_it_bl03_mimino/breakfast.633f8153.jpg" alt="сніданок із бельгійської вафлі, яєшні і апельсинового соку"> </picture> </div><div class="hotel_details__slick-item slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1"> <picture class="slick__box"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/reception.4bf68a35.webp    1x, /go_it_bl03_mimino/reception@2x.0ef437d0.webp 2x" type="image/webp"> <source media="(max-width: 1023px), (min-width: 1280px)" srcset="/go_it_bl03_mimino/reception.51a8a51f.jpg    1x, /go_it_bl03_mimino/reception@2x.cc73edce.jpg 2x" type="image/jpeg"> <img class="slick__box" src="/go_it_bl03_mimino/reception.51a8a51f.jpg" alt="відвідувачка готелю із валізою біля ресепшену"> </picture> </div></div></div>   </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider3-1280.jpg    1x,
+                    ./images/homepage/homepage-section4-slider3-1280@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider3-1024.jpg    1x,
+                    ./images/homepage/homepage-section4-slider3-1024@2x.jpg 2x
+                  "
+                  media="(min-width: 414px)"
+                />
+                <img
+                  class="img-wrap"
+                  src="./images/homepage/homepage-section4-slider3-270.jpg"
+                  alt="Registration desk"
+                />
+              </picture>
+            </div>
 
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider2-1280.jpg    1x,
+                    ./images/homepage/homepage-section4-slider2-1280@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider2-414.jpg    1x,
+                    ./images/homepage/homepage-section4-slider2-414@2x.jpg 2x
+                  "
+                  media="(min-width: 414px)"
+                />
+                <img
+                  class="img-wrap"
+                  src="./images/homepage/homepage-section4-slider2-270.jpg"
+                  alt="Breakfast"
+                />
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider1-1280.jpg    1x,
+                    ./images/homepage/homepage-section4-slider1-1280@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider1-414.jpg    1x,
+                    ./images/homepage/homepage-section4-slider1-414@2x.jpg 2x
+                  "
+                  media="(min-width: 414px)"
+                />
+                <img
+                  class="img-wrap"
+                  src="./images/homepage/homepage-section4-slider1-270.jpg"
+                  alt="bedroom"
+                />
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider3-1280.jpg    1x,
+                    ./images/homepage/homepage-section4-slider3-1280@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider3-1024.jpg    1x,
+                    ./images/homepage/homepage-section4-slider3-1024@2x.jpg 2x
+                  "
+                  media="(min-width: 414px)"
+                />
+                <img
+                  class="img-wrap"
+                  src="./images/homepage/homepage-section4-slider3-270.jpg"
+                  alt="Registration desk"
+                />
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider2-1280.jpg    1x,
+                    ./images/homepage/homepage-section4-slider2-1280@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider2-414.jpg    1x,
+                    ./images/homepage/homepage-section4-slider2-414@2x.jpg 2x
+                  "
+                  media="(min-width: 414px)"
+                />
+                <img
+                  class="img-wrap"
+                  src="./images/homepage/homepage-section4-slider2-270.jpg"
+                  alt="Breakfast"
+                />
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider1-1280.jpg    1x,
+                    ./images/homepage/homepage-section4-slider1-1280@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/homepage/homepage-section4-slider1-414.jpg    1x,
+                    ./images/homepage/homepage-section4-slider1-414@2x.jpg 2x
+                  "
+                  media="(min-width: 414px)"
+                />
+                <img
+                  class="img-wrap"
+                  src="./images/homepage/homepage-section4-slider1-270.jpg"
+                  alt="bedroom"
+                />
+              </picture>
+            </div>
+
+
+        </div>
+        <div class="hotel_details__slider-nav">
+          <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">
+          <svg class="menu-open-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-arrow-left"></use>
+          </svg>
+
+          </button>
+          <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">
+          <svg class="menu-open-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </button>
+        </div>
+        </div>
       </div>
+    </div>
+    </div>
+   <!--Buttons for order -->
+    <div class="hotel-details__buttons">
+      <button type="button" class="btn-book btn-open-book">
+        Забронювати номер
+      </button>
+      <button type="button" class="btn-book btn-open-book">
+        Переглянути ціни
+      </button>
     </div>
   </div>
 </section>
