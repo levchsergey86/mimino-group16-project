@@ -7,7 +7,7 @@
     padding-bottom: 32px;
 
     background-color: $main-background-color;
-
+    
     &__title{
         font-family: 'Film P3';
         font-weight: 700;
@@ -34,15 +34,33 @@
     &__address {
         display: flex;
         gap: 22px;
-        flex-wrap: wrap;
         margin-bottom: 32px;
     }
 
-    &__department-item:not(:last-child) {
-        margin-bottom: 32px;
+    &__item{
+        display: flex;
+        align-items: center;
+        
+        
     }
 
-    &__department-text {
+    &__item:nth-child(1){
+        gap: 22px;
+    }
+    &__item:nth-child(2){
+        gap: 54px;
+    }
+
+    &__item:nth-child(3) {
+        position: relative;
+        left: 124px;
+    }
+    
+    &__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &__text {
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
@@ -51,17 +69,10 @@
         
         color: $second-text-color;
     }
+
         
 
-    &__details-list{
-    //     display: flex;
-    //         gap: 8px;
-    }
-
-    &__details-item:not(:last-child){
-        margin-bottom: 16px;
-    }
-    &__details-thumb{
+    &__thumb{
         display: flex;
         align-items: center;
         gap: 8px;
@@ -70,36 +81,34 @@
         border: 0.5px solid $accent-color;
         border-radius: 2px;
         background-color: $primary-color; 
-    }
 
-    &__details-thumb--restaurant{
+    }
+  
+
+    &__thumb--restaurant{
         width: 144px;
         height: 40px;
     }
 
-    &__details-thumb--hotel {
+    &__thumb--hotel {
         width: 260px;
         height: 40px;
     }
 
-    &__details-location--address {
-        width: 260px;
-        height:76px;
-    }
-
-
-    &__location-thumb {
+    &__phone-thumb{
         display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 7px 32px 6px 9px;
-
-        border: 0.5px solid $accent-color;
-        border-radius: 2px;
-        background-color: $primary-color;
-
+        gap: 12px;
     }
 
+    &__thumb--address {
+        width: 260px;
+        height: 76px;
+
+        gap: 10px;
+        padding: 8px 33px 7px 10px;
+
+    }
+    
     &__phone{
         color: $logo-text-color;
         font-weight: 400;
@@ -114,10 +123,6 @@
         fill: $second-text-color;
     }
 
-    &__phone-thumb{
-        display: flex;
-        gap: 12px;
-    }
   
     &__location{
         font-weight: 400;
@@ -132,6 +137,7 @@
         fill: $second-text-color;
     }
 
+    
     &__map{
         display:block;
         width: 384px;
