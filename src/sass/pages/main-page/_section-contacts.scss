@@ -142,7 +142,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        padding: 9px 7px 7px 7px;
+        padding: 9px 6px 7px 7px;
 
         border: 0.5px solid $accent-color;
         border-radius: 2px;
@@ -224,10 +224,6 @@
         width: 100%;
         max-width: 384px;
         
-        border: 1px solid $third-text-color;
-        box-shadow: 2px 2px 60px 2px $shadow-color;
-        border-radius: 2px;
-
         @media screen and (min-width: $tablet) {
             display: flex;
             align-items: center;
@@ -238,6 +234,12 @@
             max-width: 634px;  
 
         } 
+    }
+
+    &__map{
+        border: 1px solid $third-text-color;
+        box-shadow: 2px 2px 60px 2px $shadow-color;
+        border-radius: 2px;
     }
 
     &__link:hover &__location,

@@ -2,8 +2,12 @@
     &__section {
      position: relative;
      padding: 181px 0 20px;
-     max-width: 1600px;
+    //  max-width: 1600px;
+        //  добавила
+    max-width: $desktop;
      max-height: 740px;
+    //  добавила
+     margin: 0 auto;
      background-image: linear-gradient(to bottom, $overlay-hero-color, $overlay-hero-color ), url("../images/homepage/homepage-hero-background-414.jpg");
      background-position: center;
      background-repeat: no-repeat;
