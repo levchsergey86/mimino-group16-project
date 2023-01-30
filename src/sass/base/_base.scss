@@ -1,28 +1,28 @@
 .container {
     width: 100%;
     max-width: $desktop;
-    
+    min-width: 200px;
+
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (min-width: $tablet) {
-      padding-right: 47px;
-      padding-left: 47px;
+        padding-right: 47px;
+        padding-left: 47px;
 
         width: $tablet;
-        
-      }
-  
-      @media screen and (min-width: $desktop) {
+
+    }
+
+    @media screen and (min-width: $desktop) {
         padding-right: 85px;
         padding-left: 85px;
-  
+
         width: $desktop;
-        
-      }
-   
+
+    }
 }
 
 .visually-hidden {
@@ -36,7 +36,7 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
