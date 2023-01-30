@@ -161,11 +161,20 @@
         .room-list__item-slider {
             left: initial;
 
+            .room-list__button-more {
+                margin-left: 0;
+                margin-right: initial;
+            }
+
             @include for-size(tablet) {
-                right: initial;
+                // right: initial;
             }
 
             @include for-size(desktop) {}
+        }
+
+        .room-list__button-slider {
+            justify-content: start;
         }
 
         .section-subtitle {
@@ -413,6 +422,4 @@
         width: 100%;
         justify-content: space-between;
     }
-
-
 }
