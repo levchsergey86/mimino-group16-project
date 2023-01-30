@@ -6,7 +6,7 @@
     // padding: 32px 15px;
     // background: $second-background-color;
     @include for-size(tablet) {
-        width: $tablet;
+        max-width: $tablet;
     }
 
     @include for-size(desktop) {
@@ -25,59 +25,85 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    & .container {
-        overflow: hidden;
+    @include for-size(tablet) {
+        max-width: $tablet;
+        padding-top: 0;
+        // padding-bottom: 0;
     }
 
-    &:nth-child(even) {
-        background-color: $second-background-color;
+    @include for-size(desktop) {
+        width: $desktop;
+    }
 
-        .section-description {
-            max-width: 242px;
-            margin-left: 83px;
+    & .container {
+        overflow: hidden;
+
+        @include for-size(tablet) {
+            // max-width: $tablet;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: visible;
         }
 
-        .room-list__item-slider {
-            left: 115px;
+        @include for-size(desktop) {
+            width: $desktop;
         }
 
-        .section-subtitle {
-            text-align: right;
-        }
-
-        .logo {
-            text-align: right;
-        }
-
-        .section-title {
-            text-align: right;
-        }
+        // &:nth-child(even) {
+        //     flex-direction: row-reverse;
+        // }
     }
 
     &:nth-child(odd) {
 
-        // .container {
         .room-list__item-slider {
             right: 115px;
-            // }
+
+            @include for-size(tablet) {
+                right: initial;
+            }
+
+            @include for-size(desktop) {}
         }
 
         .room-list__image {
-            margin-left: 145px;
-            margin-right: 0;
+
+            // margin-left: 145px;
+            // margin-left: auto;
+            // margin-right: 0;
+            @include for-size(tablet) {
+                width: 400px;
+                height: 524px;
+                margin: 0;
+                position: relative;
+                top: -32px;
+                right: 65px;
+            }
         }
 
         .section-description {
             max-width: 258px;
             margin-left: 0;
+
+            @include for-size(tablet) {
+                // max-width: $tablet;
+                max-width: 439px;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+            }
         }
 
-        .room-list__item-slider {
-            // left: 115px;
-        }
+
 
         .section-subtitle {
             text-align: left;
+
+            @include for-size(tablet) {
+                // margin-top: 62px;
+            }
+
+            @include for-size(desktop) {}
         }
 
         .logo {
@@ -90,32 +116,97 @@
 
         .room-list__button-slider {
             justify-content: normal;
+
+            @include for-size(tablet) {
+                justify-content: flex-end;
+            }
+
+            @include for-size(desktop) {}
         }
     }
 
+    &:nth-child(even) {
+        background-color: $second-background-color;
 
-    // &:nth-child(even) {
-    //     .room-list__image{
-    //         margin-left: 145px;
-    //         margin-right: 0;
-    //     }
-    // }
+        .container {
+            .wrapper {
+                flex-direction: row-reverse;
+            }
+
+        }
+
+        .section-description {
+            max-width: 242px;
+            margin-left: 83px;
+        }
+
+        .room-list__image {
+
+            // width: 244px;
+            // margin-bottom: 32px;
+            // margin-left: 0;
+            // margin-right: auto;
+            @include for-size(tablet) {
+                width: 400px;
+                height: 524px;
+                margin: 0;
+                position: relative;
+                top: -32px;
+                left: 65px;
+                // right: 97px;
+            }
+
+        }
+
+        .room-list__item-slider {
+            left: initial;
+
+            @include for-size(tablet) {
+                right: initial;
+            }
+
+            @include for-size(desktop) {}
+        }
+
+        .section-subtitle {
+            text-align: right;
+        }
+
+        .logo {
+            text-align: right;
+        }
+
+        .section-title {
+            text-align: right;
+        }
+    }
 
 }
 
 .room-list__image {
-    // position: absolute;
     width: 244px;
-    // height: 322px;
-    // left: 15px;
-    // top: 286px;
     margin-bottom: 32px;
+    margin-left: auto;
     background: $shadow-image-color;
-    /* shadow_little */
-
     box-shadow: 2px 2px 60px 2px $shadow-color;
     border-radius: 2px;
-    // height: 100%;
+
+    // @include for-size(tablet) {
+    //     width: 400px;
+    //     height: 524px;
+    //     margin: 0;
+    //     position: relative;
+    //     top: -32px;
+    //     right: 97px;
+    // }
+}
+
+.room-list__text {
+    @include for-size(tablet) {
+        // display: flex;
+    }
+
+    @include for-size(desktop) {}
 }
 
 .section-subtitle {
@@ -128,6 +219,18 @@
     /* identical to box height */
     color: $title-text-color;
     // text-align: right;
+
+    @include for-size(tablet) {
+        margin-top: 62px;
+        // max-width: $tablet;
+        // margin-bottom: 4px;
+        // font-size: 32px;
+        // line-height: 37px;
+    }
+
+    @include for-size(desktop) {
+        // width: $desktop;
+    }
 }
 
 .logo {
@@ -142,6 +245,20 @@
     letter-spacing: 0.3em;
 
     color: $logo-text-color;
+
+    @include for-size(tablet) {
+        // max-width: $tablet;
+        margin-bottom: 62px;
+        font-size: 64px;
+        line-height: 69px;
+        /* identical to box height */
+
+        letter-spacing: 0.3em;
+    }
+
+    @include for-size(desktop) {
+        // width: $desktop;
+    }
 }
 
 .section-title {
@@ -159,6 +276,18 @@
     /* Black */
     text-transform: uppercase;
     color: $secondary-color;
+
+    @include for-size(tablet) {
+        // max-width: $tablet;
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: 0.05em;
+    }
+
+    @include for-size(desktop) {
+        // width: $desktop;
+    }
 }
 
 .lower {
@@ -174,8 +303,13 @@
     // line-height: 15px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-
     color: #7A7A7A;
+
+    @include for-size (tablet) {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+    }
 }
 
 .room-list__item-slider {
@@ -185,6 +319,12 @@
     margin-bottom: 20px;
     display: flex;
     gap: 16px;
+
+    @include for-size(tablet) {
+        // right: initial;
+    }
+
+    @include for-size(desktop) {}
 }
 
 .room-list__item-image {
@@ -201,6 +341,10 @@
     // text-align: right;
     justify-content: flex-end;
     gap: 32px;
+
+    @include for-size(tablet) {
+        margin-bottom: 0;
+    }
 }
 
 .room-list__button-prev {
@@ -232,9 +376,43 @@
     width: 236px;
     margin-left: auto;
     margin-right: auto;
+
+    @include for-size(tablet) {
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+        // text-align: right;
+        // margin-left: auto;
+        // margin: 0;
+        // justify-content: flex-end;
+    }
+
+    @include for-size(desktop) {}
 }
 
 .room-list__button-detail {
     display: block;
     margin-bottom: 16px;
+    padding: 14px 64px;
+
+    @include for-size(tablet) {
+        gap: 16px;
+    }
+}
+
+.room-list__button-prices {
+    padding: 14px 34px;
+}
+
+.wrapper {
+    @include for-size(tablet) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
 }
