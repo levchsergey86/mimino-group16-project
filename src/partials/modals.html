@@ -15,20 +15,16 @@
             <div class="box-form-table">
 
         <div class="modal__form-field">
-            <div>
+            <div class="modal__form-field__input__margin">
             <input class="modal__form-field__input" placeholder="Ваше ім’я" id="user-name" type="text" title="Поле повинно містити ім'я." pattern="[Є-Яа-ї]+" required>
             </div>
             <label class="modal__form-field__label" for="user-name">На кого забронювати столик?</label>
         </div>
             
         <div class="modal__form-field">
-            <div>
-            <input class="modal__form-field__input" placeholder="+38 (___) ___-__-__" id="user-phone" type="tel"
-                title="Поле повинно містити телефон (+380)."
-                pattern="\+?[0-9\s\-\(\)]+"
-                minlength="13"
-                maxlength="13"
-                required>
+            <div class="modal__form-field__input__margin">
+            <input class="modal__form-field__input js-inputmask" id="user-phone" type="tel"
+                title="Поле повинно містити телефон (+380).">
             </div>
             <label class="modal__form-field__label" for="user-phone">Номер телефону</label>
         </div>
@@ -37,23 +33,29 @@
     <div class="box-form-table__last">
 
         <div class="modal__form-field">
-            <div>
+            <div class="modal__form-field__select">
             <select class="modal__form-field__input" placeholder="2" name="amount-people" id="amount-people" type="number">
                 <option value="1">1</option>
                 <option value="2" selected>2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
+            <svg class="modal__form-field__select__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
             </div>
             <label class="modal__form-field__label" for="amount-people">Столик на яку кількість осіб?</label>
         </div>
 
         <div class="modal__form-field__last">
-            <div>
+            <div class="modal__form-field__select">
             <select class="modal__form-field__input" placeholder="Сьогодні" name="tabel-book-date" id="tabel-book-date" type="text">
                 <option value="Сьогодні" selected>Сьогодні</option>
                 <option value="Завтра">Завтра</option>
             </select>
+            <svg class="modal__form-field__select__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
             </div>
             <label class="modal__form-field__label" for="tabel-book-date">На яку дату бронювати?</label>
         </div>
@@ -78,20 +80,16 @@
             <div class="box-form-room">
 
         <div class="modal__form-field">
-            <div>
+            <div class="modal__form-field__input__margin">
             <input class="modal__form-field__input" placeholder="Ваше ім’я" id="user-name" type="text" title="Поле повинно містити ім'я." pattern="[Є-Яа-ї]+" required>
             </div>
             <label class="modal__form-field__label" for="user-name">На кого забронювати номер?</label>
         </div>
             
         <div class="modal__form-field">
-            <div>
-            <input class="modal__form-field__input" placeholder="+38 (___) ___-__-__" id="user-phone" type="tel"
-            title="Поле повинно містити телефон (+380)."
-            pattern="\+?[0-9\s\-\(\)]+"
-            minlength="13"
-            maxlength="13"
-            required>
+            <div class="modal__form-field__input__margin">
+                <input class="modal__form-field__input js-inputmask" id="user-phone" type="tel"
+                title="Поле повинно містити телефон (+380).">
             </div>
             <label class="modal__form-field__label" for="user-phone">Номер телефону</label>
         </div>
@@ -101,11 +99,14 @@
         <div class="box-form-room">
 
         <div class="modal__form-field">
-            <div>
+            <div class="modal__form-field__select">
             <select class="modal__form-field__input" placeholder="Двомісний люкс" name="room-book-name" id="room-book-name" type="text">
                 <option value="Двомісний люкс" selected>Двомісний люкс</option>
                 <option value="Трьохмісний Люкс">Трьохмісний Люкс</option>
             </select>
+            <svg class="modal__form-field__select__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
             </div>
             <label class="modal__form-field__label" for="room-book-name">Категорія номеру</label>
         </div>
@@ -115,21 +116,27 @@
     <div class="box-form-room__last">
 
         <div class="modal__form-field">
-            <div>
+            <div class="modal__form-field__select">
             <select class="modal__form-field__input" placeholder="Сьогодні" name="room-book-date" id="room-book-date" type="text">
                 <option value="Сьогодні" selected>Сьогодні</option>
                 <option value="Завтра">Завтра</option>
             </select>
+            <svg class="modal__form-field__select__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
             </div>
             <label class="modal__form-field__label" for="room-book-date">Дата заїзду</label>
         </div>
 
         <div class="modal__form-field__last">
-            <div>
+            <div class="modal__form-field__select">
             <select class="modal__form-field__input" placeholder="Сьогодні" name="room-book-datefree" id="room-book-datefree" type="text">
                 <option value="Сьогодні" selected>Сьогодні</option>
                 <option value="Завтра">Завтра</option>
             </select>
+            <svg class="modal__form-field__select__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
             </div>
             <label class="modal__form-field__label" for="room-book-datefree">Дата виїзду</label>
         </div>
@@ -156,19 +163,22 @@
 
             
         <div class="modal__form-field">
-            <div>
+            <div class="modal__form-field__select">
                 <select class="modal__form-field__input" placeholder="1" name="amount-nights" id="amount-nights" type="number">
                     <option value="1" selected>1</option>
                     <option value="2">2</option>
                     <option value="2">3</option>
                     <option value="2">4</option>
                 </select>
+                <svg class="modal__form-field__select__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-arrow-down"></use>
+                </svg>
             </div>
             <label class="modal__form-field__label" for="amount-nights">Кількість ночей</label>
         </div>
              
         <div class="modal__form-field__last">
-            <div>
+            <div class="modal__form-field__input__margin">
             <input class="modal__form-field__input" placeholder="1000" id="price" type="number">
             </div>
             <label class="modal__form-field__label" for="price">грн</label>
