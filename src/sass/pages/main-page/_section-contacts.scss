@@ -221,8 +221,34 @@
 
    
     &__map-thumb{
+        // width: 100%;
+        // display: block;
+        // max-width: 384px;
+       
+        // border: 1px solid $third-text-color;
+        // box-shadow: 2px 2px 60px 2px $shadow-color;
+        // border-radius: 2px;
+        
+        // @media screen and (min-width: $tablet) {
+        //     display: flex;
+        //     align-items: center;
+        //     max-width: 535px;  
+
+        // }
+        // @media screen and (min-width: $desktop) {
+        //     max-width: 634px;  
+
+        // } 
+    }
+
+    &__map{
         width: 100%;
+        display: block;
         max-width: 384px;
+       
+        border: 1px solid $third-text-color;
+        box-shadow: 2px 2px 60px 2px $shadow-color;
+        border-radius: 2px;
         
         @media screen and (min-width: $tablet) {
             display: flex;
@@ -234,12 +260,6 @@
             max-width: 634px;  
 
         } 
-    }
-
-    &__map{
-        border: 1px solid $third-text-color;
-        box-shadow: 2px 2px 60px 2px $shadow-color;
-        border-radius: 2px;
     }
 
     &__link:hover &__location,
