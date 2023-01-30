@@ -1,11 +1,18 @@
 .about-kitchen {
   padding: 16px 0 20px 0;
   background-color: $main-background-color;
+  @media screen and (min-width: $tablet) {
+      padding: 0 0 20px 0;
+    }
   &__set-main {
     @media screen and (min-width: $tablet) {
       display: flex;
       align-items: center; 
       justify-content: flex-start;
+      margin-top: -32px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: -33px;
     }
   }
   &__content {
@@ -14,6 +21,9 @@
       margin-bottom: 0;
       margin-right: 26px;
     }
+    @media screen and (min-width: $tablet) {
+      margin-right: 37px;
+  }
   }
   &__title {
     font-family: 'Times New Roman', sans-serif;
@@ -53,6 +63,9 @@
         width: 439px;
         font-size: 16px;
     }
+    @media screen and (min-width: $desktop) {
+        width: 518px;
+    }
       &--brown {
         color: $second-text-color;
         width: 163px;
@@ -60,17 +73,49 @@
         @media screen and (min-width: $tablet) {
         width: 312px;
         margin-left: 48px;
-    }
       }
+        @media screen and (min-width: $desktop) {
+        margin-left: 32px;
+    }
   }
+}
   &__img {
+    position: relative;
     margin-left: auto;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    z-index: 60;
   }
   &__set-secondary {
     display: flex;
     align-items: center;
     margin-top: 32px;
     margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      margin-top: -16px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-top: -68px;
   }
+  }
+  &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    color: black;
+    background-color: white;
+    width: 315px;
+    height: 297px;
+    @media screen and (min-width: $tablet) {
+      width: 428px;
+      height: 258px;
+      margin-top: -28px;
+  }
+  @media screen and (min-width: $desktop) {
+      width: 548px;
+      height: 326px;
+      margin-top: -148px;
+  }
+}
 }
