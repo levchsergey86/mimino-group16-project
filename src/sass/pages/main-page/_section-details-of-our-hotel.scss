@@ -37,7 +37,7 @@
         url('../images/homepage/bg-ipad-2x.jpg');
     }
   }
-  @include desktop {
+  @media screen and (min-width: 1280px) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../images/homepage/bg-des.jpg');
     max-width: 1280px;
