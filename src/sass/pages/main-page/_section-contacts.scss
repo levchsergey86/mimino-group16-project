@@ -116,8 +116,11 @@
     }
 
     &__item:nth-child(3) {
-        @media screen and (min-width: $mobile) and (max-width: $tablet) {
+        @media screen and (min-width: $mobile){
             margin-left: 124px;
+        }
+        @media screen and (min-width: $tablet){
+            margin-left: 0;
         }
     }
     
