@@ -77,6 +77,23 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $main-text-color;
+
+}
+
+&__text-3 {
+    margin-top: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+
+    @media (min-width:$tablet) {
+        display: block;
+        margin-top: 0px;
+    }
 }
 
 &__arrow-title {
@@ -87,10 +104,39 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $second-text-color;
+
+    @media (min-width:$tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+    }
 }
 
-&__button {
-    margin-top: 32px;
+&__text-container {
+
+
+    @media (min-width:$tablet) {
+        display: flex;
+        gap: 80px;
+        margin-top: 16px;
+    }
+
+    @media (min-width:$tablet) {
+        display: flex;
+        gap: 159px;
+    }
+}
+
+&__buttons-reserv-case {
+display: flex;
+flex-direction: column;
+align-items: center; 
+margin-top: 32px;
+
+@media (min-width:$tablet) {
+    justify-content: flex-end;
+    gap: 32px;
+    margin-bottom: 28px;
+}
 }
 
 &__button-case {
