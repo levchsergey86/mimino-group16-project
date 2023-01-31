@@ -89,8 +89,17 @@
     color: $second-text-color;
 }
 
-&__button {
-    margin-top: 32px;
+&__buttons-reserv-case {
+display: flex;
+flex-direction: column;
+align-items: center; 
+margin-top: 32px;
+
+@media (min-width:$tablet) {
+    justify-content: flex-end;
+    gap: 32px;
+    margin-bottom: 28px;
+}
 }
 
 &__button-case {
