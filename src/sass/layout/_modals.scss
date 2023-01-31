@@ -115,6 +115,7 @@
             position: relative;
             margin-bottom: 8px;
             cursor: pointer;
+            appearance: none;
 
             &__icon {
                 position: absolute;
@@ -123,8 +124,15 @@
                 transform: translateY(-50%);
                 fill: $second-text-color;
 
-                @media (max-width: 779px) {
-                    display: none;
+                &__price {
+                    position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                fill: $second-text-color;
+                    @media (max-width: 779px) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -141,6 +149,7 @@
             border: 1px solid $second-text-color;
             border-radius: 2px;
             cursor: pointer;
+            appearance: none;
 
             &__margin {
                 margin-bottom: 8px;
@@ -180,6 +189,10 @@
 
     &__icon {
         fill: $secondary-color;
+
+        &:hover {
+            fill: $accent-color;
+        }
     }
 }
 
@@ -256,6 +269,4 @@
 
 
 
-select {
-	appearance: none;
-}
+
