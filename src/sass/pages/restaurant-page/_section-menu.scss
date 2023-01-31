@@ -16,10 +16,7 @@
     
     }
 
-    // &__table{
-    //     margin-bottom: 32px;
-    // }
-
+  
     &__header{
         font-family: 'Times New Roman';
         font-weight: 700;
@@ -30,7 +27,13 @@
         
         color: $secondary-color;
         margin-bottom: 16px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 20px;
+        }
     }
+
+ 
 
     &__title{
         font-family: 'Times New Roman';
@@ -41,6 +44,11 @@
         color: $secondary-color;
         padding-top: 16px;
         padding-bottom: 16px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 20px;
+        }
+
     }
 
     &__dish{
@@ -50,7 +58,8 @@
         letter-spacing: 0.02em;
         color: $secondary-color;
         
-        padding-bottom: 4px;
+        padding-bottom: 4px; 
+
     }
 
     &__dish--item{
@@ -72,6 +81,8 @@
         width: 225px;
 
         padding-bottom: 8px;
+
+
     }
 
     &__description--last{
@@ -86,10 +97,12 @@
         
         color: $secondary-color;
 
-        // padding-left: 30px;
-        // padding-right: 32px;
-        width: 95px;
+        padding-left: 18px;
+        padding-right: 18px;
+        width: 96px;
     }
+
+
     &__price{
         font-weight: 700;
         font-size: 14px;
@@ -97,7 +110,7 @@
         letter-spacing: 0.02em;
 
         color: $secondary-color;
-        width: 60px;
+        width: 63px;
     }
 
     &__button-thumb{
@@ -108,8 +121,8 @@
 
     &__button-book-table {
         
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding: 12px 20px;
+
         text-align: center;
         width: 236px;
     
@@ -131,6 +144,19 @@
         }
     
     }
+    &__portion-size--center{
+        text-align: center;
+    }
+
+   
+
+    &__table-thumb{
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            gap: 87px;
+        }
+       
+    }
 
 } 
 
@@ -147,6 +173,14 @@ tr{
 }
 table{
     padding: 0; 
+    border-collapse: collapse;
 }
 
 
+
+  
+//   @media screen and (max-width: 600px) {
+//     .table-wrap {
+//       overflow-y: scroll;
+//     }
+//   }
