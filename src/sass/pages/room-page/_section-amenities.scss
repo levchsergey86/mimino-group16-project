@@ -3,155 +3,154 @@
     padding-bottom: 32px;
     background-color: $main-background-color;
 
-&__title-1 {
-    margin-bottom: 0px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.16;
-    color: $secondary-color;
-}
-
-&__title-2 {
-    margin-top: 32px;
-    margin-bottom: 0px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    color: $secondary-color;
-}
-
-&__text-2 {
-    margin-top: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $main-text-color;
-}
-
-&__arrow-title {
-    margin-left: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $second-text-color;
-}
-
-
-&__title-1 {
-    margin-bottom: 0px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.16;
-    color: $secondary-color;
-}
-
-&__title-2 {
-    margin-top: 32px;
-    margin-bottom: 0px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    color: $secondary-color;
-}
-
-&__text-2 {
-    margin-top: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $main-text-color;
-
-}
-
-&__text-3 {
-    margin-top: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $main-text-color;
-
-    @media (min-width:$tablet) {
-        display: block;
-        margin-top: 0px;
+    &__title-1 {
+        margin-bottom: 0px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.16;
+        color: $secondary-color;
     }
-}
 
-&__arrow-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $second-text-color;
-
-    @media (min-width:$tablet) {
-    font-size: 20px;
-    line-height: 1.2;
+    &__title-2 {
+        margin-top: 32px;
+        margin-bottom: 0px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        color: $secondary-color;
     }
-}
 
-&__text-container {
-
-
-    @media (min-width:$tablet) {
-        display: flex;
-        gap: 80px;
+    &__text-2 {
         margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $main-text-color;
     }
 
-    @media (min-width:$tablet) {
+    &__arrow-title {
+        margin-left: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $second-text-color;
+    }
+
+
+    &__title-1 {
+        margin-bottom: 0px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.16;
+        color: $secondary-color;
+    }
+
+    &__title-2 {
+        margin-top: 32px;
+        margin-bottom: 0px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        color: $secondary-color;
+    }
+
+    &__text-2 {
+        margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $main-text-color;
+
+    }
+
+    &__text-3 {
+        margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $main-text-color;
+
+        @media (min-width:$tablet) {
+            display: block;
+            margin-top: 0px;
+        }
+    }
+
+    &__arrow-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $second-text-color;
+
+        @media (min-width:$tablet) {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+
+    &__text-container {
+
+
+        @media (min-width:$tablet) {
+            display: flex;
+            gap: 80px;
+            margin-top: 16px;
+        }
+
+        @media (min-width:$tablet) {
+            display: flex;
+            gap: 159px;
+        }
+    }
+
+    &__buttons-reserv-case {
         display: flex;
-        gap: 159px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+
+        @media (min-width:$tablet) {
+            justify-content: flex-end;
+            gap: 32px;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__button-case {
+        margin-top: 20px;
+        display: flex;
+        gap: 12.75px;
+    }
+
+    &__arrow {
+        fill: $second-text-color;
+
+        &:hover,
+        &:focus {
+            fill: $secondary-color;
+        }
     }
 }
-
-&__buttons-reserv-case {
-display: flex;
-flex-direction: column;
-align-items: center; 
-margin-top: 32px;
-
-@media (min-width:$tablet) {
-    justify-content: flex-end;
-    gap: 32px;
-    margin-bottom: 28px;
-}
-}
-
-&__button-case {
-    margin-top: 20px;
-    display: flex;
-    gap: 12.75px;
-}
-
-&__arrow {
-    fill: $second-text-color;
-
-    &:hover,
-    &:focus {
-        fill: $secondary-color;
-    }
-}
-}
-
