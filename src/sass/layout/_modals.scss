@@ -30,6 +30,7 @@
     height: 100%;
     width: 100%;
     border-radius: 4px;
+    z-index: 51;
 
     @media (min-width: 780px) {
         padding: 60px;
@@ -123,13 +124,20 @@
                 right: 20px;
                 transform: translateY(-50%);
                 fill: $second-text-color;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
                 &__price {
                     position: absolute;
-                top: 50%;
-                right: 20px;
-                transform: translateY(-50%);
-                fill: $second-text-color;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    fill: $second-text-color;
+                    transition-property: fill;
+                    transition-duration: 250ms;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
                     @media (max-width: 779px) {
                         display: none;
                     }
@@ -150,6 +158,47 @@
             border-radius: 2px;
             cursor: pointer;
             appearance: none;
+            transition-property: border-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            
+            &:hover + .modal__form-field__select__icon {
+
+                fill: $secondary-color;
+            }
+
+            &:hover{
+                border-color: $secondary-color;
+            }
+
+            &:focus + .modal__form-field__select__icon {
+
+                fill: $secondary-color;
+            }
+
+            &:focus{
+                border-color: $secondary-color;
+            }
+
+            &:hover + .modal__form-field__select__icon__price {
+
+                fill: $secondary-color;
+            }
+
+            &:hover{
+                border-color: $secondary-color;
+            }
+
+            &:focus + .modal__form-field__select__icon__price {
+
+                fill: $secondary-color;
+            }
+
+            &:focus{
+                border-color: $secondary-color;
+            }
+
 
             &__margin {
                 margin-bottom: 8px;
@@ -189,6 +238,9 @@
 
     &__icon {
         fill: $secondary-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
             fill: $accent-color;
