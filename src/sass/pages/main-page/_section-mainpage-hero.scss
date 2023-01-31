@@ -2,7 +2,8 @@
     &__section {
      position: relative;
      padding: 181px 0 20px;
-     max-width: 1600px;
+     margin: 0 auto;
+     max-width: $desktop;
      max-height: 740px;
      background-image: linear-gradient(to bottom, $overlay-hero-color, $overlay-hero-color ), url("../images/homepage/homepage-hero-background-414.jpg");
      background-position: center;
@@ -178,6 +179,9 @@
         width: 24px;
         height: 24px;
         fill: rgba(243, 198, 83, 0.7);
-
+        &:hover,
+        &:focus{
+            fill:#fff;
+        }
     }
 }
