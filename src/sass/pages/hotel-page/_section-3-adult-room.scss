@@ -154,7 +154,7 @@
             // margin-right: auto;
             @include for-size(tablet) {
                 width: 400px;
-                height: 524px;
+                // height: 524px;
                 margin: 0;
                 position: relative;
                 top: -32px;
@@ -211,6 +211,7 @@
 
 .room-list__image {
     width: 244px;
+    height: 322px;
     margin-bottom: 32px;
     margin-left: auto;
     background: $shadow-image-color;
@@ -364,6 +365,7 @@
 
 .room-list__item-image {
     width: 194px;
+    height: 194px;
     background-color: $shadow-image-color;
     /* shadow_little */
 
