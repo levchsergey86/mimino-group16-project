@@ -179,12 +179,14 @@
 
 }
 
-.swiper-btns {
+.about-rest__swiper-btns {
     display: flex;
     gap: 32px;
 
     margin-top: 20px;
     margin-left: 286px;
+
+    fill: $secondary-color;
 
     @media screen and (min-width: $tablet) {
 
@@ -202,7 +204,7 @@
 
 }
 
-.swiper-thumb {
+.about-rest__swiper-thumb {
 
     @media screen and (min-width: $tablet) {
 
@@ -219,10 +221,5 @@
          }
     
 }
-// .swiper-img {
 
-//     background: $shadow-image-color;
 
-//     box-shadow: 5px 5px 70px 17px $shadow-color;
-
-// }
