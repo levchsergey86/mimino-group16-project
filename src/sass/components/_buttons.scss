@@ -154,14 +154,15 @@
 }
 
 
-.arrow-swiper {
+.arrow-swiper-prev,
+.arrow-swiper-next {
 
     display: block;
     padding: 0;
     background: none;
     border: 0;
 
-    fill: $secondary-color;
+    
 
     transition-property: fill;
     transition-duration: 250ms;
