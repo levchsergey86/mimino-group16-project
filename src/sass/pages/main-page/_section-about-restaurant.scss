@@ -1,5 +1,7 @@
 .about-rest {
 
+    overflow: hidden;
+
     padding-top: 16px;
     padding-bottom: 20px;
 
@@ -7,6 +9,7 @@
     @media screen and (min-width: $tablet) {
 
         padding-top: 120px;
+        overflow: visible;
         
     }
 
@@ -155,6 +158,8 @@
 
         &:nth-child(2n) .about-rest__image {
 
+            z-index: 0;
+
             @media screen and (min-width: $tablet) {
 
             margin-top: -48px;
@@ -174,52 +179,93 @@
 
         background: $shadow-image-color;
 
+        z-index: 99;
+
         box-shadow: 5px 5px 70px 17px $shadow-color;
+        border-radius: 2px;
+    }
+
+    &__img--border {
+        
+        border-radius: 2px;
+    }
+
+
+    &__swiper-btns {
+        display: flex;
+        gap: 32px;
+    
+        margin-top: 20px;
+        margin-left: 286px;
+    
+        fill: $secondary-color;
+    
+        @media screen and (min-width: $tablet) {
+    
+            margin-left: 331px;
+                  
+              }
+              
+        @media screen and (min-width: $desktop) {
+    
+            margin-left: 445px;
+                  
+              }
+    
+    
+    
+    }
+
+    &__swiper-thumb {
+
+        width: 515px;
+    
+        overflow: hidden;
+    
+    
+        @media screen and (min-width: $tablet) {
+    
+            width: 428px;
+    
+            margin-left: 489px;
+            margin-top: -60px;
+                  
+              }
+    
+              @media screen and (min-width: $desktop) {
+    
+                width: 548px;
+    
+                margin-left: 562px;
+                margin-top: -179px;
+                      
+             }
+        
+    }
+
+    &__swiper-wrapper {
+
+        
+
+    
+        margin-left: 69px;
+    
+        @media screen and (min-width: $tablet) {
+    
+            margin-left: 0;
+                  
+              }
+    
+        
+        
     }
 
 }
 
-.about-rest__swiper-btns {
-    display: flex;
-    gap: 32px;
-
-    margin-top: 20px;
-    margin-left: 286px;
-
-    fill: $secondary-color;
-
-    @media screen and (min-width: $tablet) {
-
-        margin-left: 331px;
-              
-          }
-          
-    @media screen and (min-width: $desktop) {
-
-        margin-left: 445px;
-              
-          }
 
 
+// .swiper-inner {
+//     // width: 245px;
 
-}
-
-.about-rest__swiper-thumb {
-
-    @media screen and (min-width: $tablet) {
-
-        margin-left: 489px;
-        margin-top: -60px;
-              
-          }
-
-          @media screen and (min-width: $desktop) {
-
-            margin-left: 562px;
-            margin-top: -179px;
-                  
-         }
-    
-}
-
+// }
 
