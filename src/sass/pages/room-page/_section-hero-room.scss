@@ -1,64 +1,181 @@
-.room-page__hero-room {
+.hero-room {
     position: relative;
     padding-top: 484px;
     padding-bottom: 40px;
+    background-image:
+        url(../images/roompage/roompage-hero-mobile.jpg);
+
+    @media (min-width: $tablet) {
+        background-image: url(../images/roompage/roompage-hero-tablet.jpg);
+        padding-bottom: 102px;
+    }
+
+    &__adres-box {
+        position: absolute;
+        top: 64px;
+        right: 15px;
+        display: flex;
+        padding: 8px 6px;
+        max-height: 47px;
+        max-width: 210px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+
+
+        @media (min-width:$tablet) {
+            position: absolute;
+            padding: 10px 8px;
+            max-width: 285px;
+            max-height: 56px;
+            left: 45px;
+            top: 640px;
+
+        }
+
+    }
+
+    &__adres-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: $address-text-color;
+        font-size: 12px;
+        gap: 8px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+
+        @media (min-width:$tablet) {
+            font-size: 16px;
+        }
+    }
+
+    &__adres-icon {
+        fill: $accent-color;
+        width: 20px;
+        height: 20px;
+
+        @media (min-width:$tablet) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0px;
+        max-width: 570px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: 0.05em;
+        color: $primary-color;
+
+        @media (min-width:$tablet) {
+            font-size: 36px;
+            ine-height: 1.15;
+        }
+    }
+
+    &__text-1 {
+        margin-top: 14px;
+        margin-right: auto;
+        max-width: 400px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $primary-color;
+
+        @media (min-width:$tablet) {
+            font-size: 16px;
+            line-height: 1.22;
+        }
+    }
+
+    &__button {
+        margin-top: 30px;
+        margin-left: 92px;
+
+        @media (min-width:$tablet) {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 0px;
+            bottom: 62px;
+            right: 47px;
+        }
+    }
+
+    &__forward_arrow {
+        top: 350px;
+        right: 15px;
+    }
+
+    &__back_arrow {
+        top: 350px;
+        left: 15px;
+    }
+
+    &__forward_arrow,
+    &__back_arrow {
+        display: flex;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background-color: $overlay-hero-color;
+        position: absolute;
+        fill: $accent-color;
+
+        &:hover,
+        &:focus {
+            @extend %arrow-hvr;
+        }
+    }
+
+    &__svg {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    &__social-list {
+        position: absolute;
+        left: 16px;
+        bottom: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+
+@media screen and (min-width: $tablet) {
+    flex-direction: row;
+    left: 373px;
+    bottom: 37px;
 }
 
-.room-page__hero-room {
-    background-image: 
-    url(../images/roompage/roompage-hero-mobile.jpg);
-}
+        @media screen and (min-width: $desktop) {
+            display: none;
+        }
+    }
 
-// .room-page__container {
-//     // height: 740px;
-// }
+    &__social-link {
+        display: flex;
+        color: $accent-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
+    &__social-link {
+        fill: $accent-color;
+    }
 
-.room-page__title {
-    width: 325px;
-    margin-bottom: 0px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: 0.05em;
-    color: $primary-color;
-}
-
-.room-page__text-1 {
-    width: 325px;
-    margin-top: 14px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $primary-color;
-}
-
-.room-page__button {
-    margin-top: 30px;
-    margin-left: 92px;
-}
-
-.room-page__forward_arrow, 
-.room-page__back_arrow {
-    position: absolute;
-}
-
-.room-page__forward_arrow,
-.room-page__back_arrow {
-    display: flex;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    background-color: $secondary-color;
-}
-
-.room-page__svg {
-    border: 0;
-    margin: 0;
-    padding: 0;
+    &__social-link:hover,
+    &__social-link:focus {
+        fill: $primary-color;
+    }
 }
