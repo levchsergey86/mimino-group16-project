@@ -1,20 +1,12 @@
-.room-page__hero-room {
+.hero-room {
     position: relative;
     padding-top: 484px;
     padding-bottom: 40px;
-}
-
-.room-page__hero-room {
-    background-image: 
-    url(../images/roompage/roompage-hero-mobile.jpg);
-}
-
-// .room-page__container {
-//     // height: 740px;
-// }
+    background-image:
+        url(../images/roompage/roompage-hero-mobile.jpg);
 
 
-.room-page__title {
+&__title {
     width: 325px;
     margin-bottom: 0px;
     font-family: 'Times New Roman';
@@ -26,7 +18,7 @@
     color: $primary-color;
 }
 
-.room-page__text-1 {
+&__text-1 {
     width: 325px;
     margin-top: 14px;
     font-family: 'Montserrat';
@@ -38,27 +30,73 @@
     color: $primary-color;
 }
 
-.room-page__button {
+&__button {
     margin-top: 30px;
     margin-left: 92px;
 }
 
-.room-page__forward_arrow, 
-.room-page__back_arrow {
-    position: absolute;
+&__forward_arrow {
+    top: 350px;
+    right: 15px;
 }
 
-.room-page__forward_arrow,
-.room-page__back_arrow {
+&__back_arrow {
+    top: 350px;
+    left: 15px;
+}
+
+&__forward_arrow,
+&__back_arrow {
     display: flex;
     border: 0;
     margin: 0;
     padding: 0;
-    background-color: $secondary-color;
+    background-color: $overlay-hero-color;
+    position: absolute;
+    fill: $accent-color;
+
+    &:hover,
+    &:focus {
+        @extend %arrow-hvr;
+    }
 }
 
-.room-page__svg {
+&__svg {
     border: 0;
     margin: 0;
     padding: 0;
 }
+
+
+&__social-list {
+    position: absolute;
+    left: 16px;
+    bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
+&__social-link {
+    display: flex;
+    color: $accent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__social-link {
+    fill: $accent-color;
+}
+
+&__social-link:hover,
+&__social-link:focus {
+    fill: $primary-color;
+}
+}
+
+
+
