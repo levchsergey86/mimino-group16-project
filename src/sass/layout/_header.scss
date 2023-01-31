@@ -2,10 +2,9 @@
     max-width: $desktop;
     margin-left: auto;
     margin-right: auto;
-    background-color: $overlay-hero-color;
     z-index: 50;
     overflow: auto;
-    position: relative;
+    position: absolute;
 
     &__container {
         display: flex;
