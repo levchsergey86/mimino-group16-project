@@ -1,12 +1,14 @@
-.roomForThree {
+.hotel-page {
+    margin-left: auto;
+    margin-right: auto;
     background-color: $main-background-color;
-    max-width: 414px;
+    // max-width: 414px;
 
     // outline: 1px solid red;
     // padding: 32px 15px;
     // background: $second-background-color;
     @include for-size(tablet) {
-        max-width: $tablet;
+        // max-width: $tablet;
     }
 
     @include for-size(desktop) {
@@ -14,19 +16,15 @@
     }
 }
 
-.room-list {
-    // padding: 32px 15px;
-    // width: 100%;
-
-}
+// .room-list {}
 
 .room-list__item {
-    max-width: 414px;
+    // max-width: 414px;
     padding-top: 32px;
     padding-bottom: 32px;
 
     @include for-size(tablet) {
-        max-width: $tablet;
+        // max-width: $tablet;
         padding-top: 0;
         // padding-bottom: 0;
     }
@@ -79,6 +77,12 @@
                 top: -32px;
                 right: 65px;
             }
+
+            @include for-size(desktop) {
+                width: 460px;
+                height: 574px;
+                right: 95px;
+            }
         }
 
         .section-description {
@@ -92,6 +96,8 @@
                 line-height: 20px;
                 letter-spacing: 0.02em;
             }
+
+            @include for-size(desktop) {}
         }
 
 
@@ -137,7 +143,7 @@
 
         .section-description {
             max-width: 242px;
-            margin-left: 83px;
+            margin-left: initial;
         }
 
         .room-list__image {
@@ -166,6 +172,8 @@
                 margin-right: initial;
             }
 
+
+
             @include for-size(tablet) {
                 // right: initial;
             }
@@ -174,8 +182,17 @@
         }
 
         .room-list__button-slider {
-            justify-content: start;
+
+            @include for-size(tablet) {
+                justify-content: flex-start;
+            }
         }
+
+        // .room-list__button-slider {
+        //     @include for-size(tablet) {
+        //         justify-content: start;
+        //     }
+        // }
 
         .section-subtitle {
             text-align: right;
@@ -238,6 +255,9 @@
     }
 
     @include for-size(desktop) {
+        margin-top: 72px;
+        font-size: 32px;
+        line-height: 37px;
         // width: $desktop;
     }
 }
@@ -267,6 +287,7 @@
 
     @include for-size(desktop) {
         // width: $desktop;
+        margin-bottom: 72px;
     }
 }
 
@@ -296,6 +317,10 @@
 
     @include for-size(desktop) {
         // width: $desktop;
+        margin-bottom: 24px;
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: 0.05em;
     }
 }
 
@@ -330,6 +355,7 @@
     gap: 16px;
 
     @include for-size(tablet) {
+        gap: 40px;
         // right: initial;
     }
 
@@ -337,11 +363,17 @@
 }
 
 .room-list__item-image {
+    width: 194px;
     background-color: $shadow-image-color;
     /* shadow_little */
 
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+
+    @include for-size(desktop) {
+        width: 254px;
+        height: 254px;
+    }
 }
 
 .room-list__button-slider {
@@ -389,17 +421,22 @@
     @include for-size(tablet) {
         width: auto;
         display: flex;
-        align-items: center;
+        // align-items: center;
         flex-direction: column;
-        justify-content: center;
-        margin-right: 0;
+        // justify-content: center;
+        margin-top: 45px;
+        margin-left: initial;
+        margin-right: initial;
+        gap: 16px;
         // text-align: right;
         // margin-left: auto;
         // margin: 0;
         // justify-content: flex-end;
     }
 
-    @include for-size(desktop) {}
+    @include for-size(desktop) {
+        margin-top: 70px;
+    }
 }
 
 .room-list__button-detail {
@@ -408,7 +445,8 @@
     padding: 14px 64px;
 
     @include for-size(tablet) {
-        gap: 16px;
+        margin-bottom: initial;
+        // gap: 16px;
     }
 }
 
