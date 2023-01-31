@@ -34,6 +34,7 @@
     }
 
     @media screen and (min-width: $desktop) {
+        max-width: 1600px;
         background-image:linear-gradient($overlay-hero-color,$overlay-hero-color), url(../images/hotel-page/bg-hotel-hero-des.jpg);
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -53,7 +54,7 @@
     line-height: 1.07;
     letter-spacing: 0.3em;
     color: $primary-color;
-    margin: 0 auto 32px auto;
+    margin-bottom: 32px;
     
     @media screen and (min-width: $tablet) {
         font-size: 128px;
@@ -68,47 +69,70 @@
     letter-spacing: 0.02em;
     color: $primary-color;
     margin-bottom: 178px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+    }
 }
 
-.hotel-hero__address{
+
+.hotel-hero__address-box{
     position: absolute;
-    top: 0;
+    top: 64px;
     right: 15px;
-    width: 210px;
-    border: 1px solid $accent-color;
-    border-radius: 2px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
+    padding: 8px 6px;
+    max-height: 47px;
+    max-width: 210px;
     text-align: left;
-    color: $address-text-color;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    @media (min-width:$tablet) {
+        padding: 10px 8px;
+        max-width: 285px;
+        max-height: 56px;
+        left: 45px;
+        top: 83%;
+    }
     
 }
-
-.hero__address-icon{
-    display: block;
-    fill: $accent-color;
-}
-
-.hero__btn-list{
+.hotel-hero__address-link{
     display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    color: $address-text-color;
+    font-size: 12px;
+    gap: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    @media (min-width:$tablet) {
+        font-size: 16px;
+    }
+}
+.hotel-hero__address-icon{
+    fill: $accent-color;
+    width: 20px;
+    height: 20px;
+    @media (min-width:$tablet) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.hotel-hero__btn-list{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-direction: column;
 
     @media screen and (min-width: $tablet) {
         position: absolute; 
+        flex-direction: row;
+        flex-wrap: wrap;
         bottom: 64px;
         right: 47px;
         gap: 40px;
@@ -118,28 +142,33 @@
     }
 }
 
-.hero__social-list {
-    position: absolute;
+.hotel-hero__social-list {
+    position: absolute;  
+    left: 15px;
     bottom: 20px;
     display: flex;
     align-items: center;
     gap: 23px;
+    @media screen and (min-width: $tablet) {
+        left: 47px;
+        bottom: 15px;
+    }
 
     @media screen and (min-width: $desktop) {
-        display: none; 
+        display: none;
     }
 }
 
-.hero__social-link {
+.hotel-hero__social-link {
     color: $accent-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: $primary-color;
+}
 }
 
-.hero__social-icon {
+.hotel-hero__social-icon {
     fill: currentColor;
 }
 
-.hero__social-link:hover,
-.hero__social-link:focus {
-    color: $primary-color;
-}
