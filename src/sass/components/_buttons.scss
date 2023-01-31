@@ -1,6 +1,6 @@
 .button-transparent {
 
-    padding: 14px 24px;
+    padding: 12px 22px;
     text-align: center;
 
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +9,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    cursor: pointer;
 
     background-color: $button-background-color;
     color: $accent-color;
@@ -19,10 +20,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
-    @media screen and (min-width: $desktop) {
-        padding: 12px 33px;
-    }
 
     &:hover,
     &:focus {
@@ -43,6 +40,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    cursor: pointer;
 
     background-color: $secondary-color;
     color: $accent-color;
@@ -52,11 +50,6 @@
     transition-property: background-color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
-    @media screen and (min-width: $desktop) {
-        padding: 12px 33px;
-    }
 
     &:hover,
     &:focus {
@@ -75,6 +68,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    cursor: pointer;
 
     background-color: $secondary-color;
     color: $primary-color;
@@ -115,6 +109,7 @@
     font-weight: 500;
     font-size: 19px;
     line-height: 1.2;
+    cursor: pointer;
 
     background-color: $secondary-color;
     color: $primary-color;
