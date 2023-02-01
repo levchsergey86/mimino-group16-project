@@ -139,7 +139,7 @@
     &__text-1 {
         margin-top: 14px;
         margin-right: auto;
-        max-width: 400px;
+        max-width: 325px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -151,6 +151,7 @@
         @media (min-width:$tablet) {
             font-size: 16px;
             line-height: 1.22;
+            max-width: 400px;
         }
     }
 
@@ -158,6 +159,7 @@
         display: block;
         margin-top: 30px;
         margin-left: auto;
+        margin-right: 38px;
 
         @media (min-width:$tablet) {
             position: absolute;
@@ -165,6 +167,7 @@
             margin-left: 0px;
             bottom: 62px;
             right: 47px;
+            margin-right: 0px;
         }
 
         @media (min-width:$desktop) {
