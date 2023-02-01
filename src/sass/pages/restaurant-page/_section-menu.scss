@@ -49,6 +49,11 @@
             margin-bottom: 20px;
         }
 
+        @media screen and (min-width: $desktop) {
+            font-size: 24px;
+            line-height: 1.1667;     
+        }
+
     }
 
     &__dish{
@@ -60,10 +65,19 @@
         
         padding-bottom: 4px; 
 
+        @media screen and (min-width: $desktop) {
+            font-size: 16px;
+            line-height: 1.25;     
+        }
+
+
     }
 
     &__dish--item{
         padding-bottom: 8px;
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 11px;   
+        }
     }
 
     &__dish--last{
@@ -82,11 +96,34 @@
 
         padding-bottom: 8px;
 
-
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 12px;   
+        }
     }
 
     &__description--last{
         padding-bottom:0;
+    }
+
+    &__description--left{
+        @media screen and (min-width: $tablet) {
+            width: 209px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 258px;
+        }
+        
+    }
+
+    &__description--right{
+        @media screen and (min-width: $tablet) {
+            width: 225px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 252px;
+        }
+        
     }
 
     &__portion-size{
@@ -97,9 +134,49 @@
         
         color: $secondary-color;
 
+        text-align: center;
+
         padding-left: 18px;
         padding-right: 18px;
         width: 96px;
+
+
+        @media screen and (min-width: $tablet) {
+            text-align: left;
+        }
+
+        
+    }
+
+    &__portion-size--left{
+
+        @media screen and (min-width: $tablet) {
+            width: 141px;
+            padding-left: 55px;
+            padding-right: 0;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 157px;
+            padding-left: 58px;
+            
+        }
+    }
+
+    &__portion-size--right{
+
+        @media screen and (min-width: $tablet) {
+            width: 145px;
+            padding-left: 47px;
+            padding-right: 0;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 165px;
+            padding-left: 68px;
+          
+        }
+
+       
     }
 
 
@@ -111,51 +188,108 @@
 
         color: $secondary-color;
         width: 63px;
+
+        @media screen and (min-width: $desktop) {
+            font-size: 16px;
+            line-height: 1.25;
+        }
+
     }
 
+    &__price--left{
+        @media screen and (min-width: $tablet) {
+            width: 62px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 70px;
+        }
+        
+    }
+    
+    &__price--right{
+        @media screen and (min-width: $tablet) {
+            width: 61px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 70px;
+        }
+        
+    }
+
+  
     &__button-thumb{
-        margin-top: 32px;
+        
         display: flex;
-       justify-content: center;
+        justify-content: center;
+
+        @media screen and (max-width: 1023px) {
+           max-width: $mobile;
+        }
+      
+        @media screen and (min-width: $tablet) {
+            justify-content: right;
+        }
     }
 
     &__button-book-table {
         
-        padding: 12px 20px;
+        // padding: 12px 22px;
 
-        text-align: center;
-        width: 236px;
+        // text-align: center;
+        // width: 236px;
     
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
+        // font-weight: 700;
+        // font-size: 16px;
+        // line-height: 1.25;
+        // letter-spacing: 0.02em;
     
         background-color: $secondary-color;
-        color: $accent-color;
+        // color: $accent-color;
         border: 2px solid $second-background-color;
-        border-radius: 25px;
+        // border-radius: 25px;
     
-        transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                    
-        &:hover,
-        &:focus {
-            @extend %btn-hvr;
-        }
-    
+        // transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        // cursor: pointer;
     }
-    &__portion-size--center{
-        text-align: center;
+                    
+    // &__button-book-table:hover,
+    // &__button-book-table:focus {
+    //     @extend %btn-hvr;
+    // }
+    
+   
+    &__portion-size--position{
+        text-align: left;
     }
 
    
 
     &__table-thumb{
+        margin-bottom: 32px;
         @media screen and (min-width: $tablet) {
             display: flex;
             gap: 87px;
+            margin-bottom: 41px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            gap: 139px;
+            margin-bottom: 32px;
         }
        
+    }
+
+    &__br-desktop{
+        @media screen and (min-width: $desktop) {
+            display: none;
+        }
+    }
+    &__br-tablet{
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
     }
 
 } 
@@ -175,12 +309,3 @@ table{
     padding: 0; 
     border-collapse: collapse;
 }
-
-
-
-  
-//   @media screen and (max-width: 600px) {
-//     .table-wrap {
-//       overflow-y: scroll;
-//     }
-//   }
