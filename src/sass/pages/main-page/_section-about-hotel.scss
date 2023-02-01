@@ -5,6 +5,7 @@
         background: $main-background-color;
 
         @media screen and (min-width: $tablet) {
+            overflow: visible;
             padding-top: 0;
             padding-bottom: 32px;
         }
