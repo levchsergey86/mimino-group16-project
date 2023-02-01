@@ -12,3 +12,17 @@
       refs.modal.classList.toggle("is-hidden");
     }
   })();
+
+  (() => {
+    const refs = {
+      openModalBtn: document.querySelector("[modal-open-table1]"),
+      modal: document.querySelector("[modal-table]"),
+    };
+  
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle("is-hidden");
+    }
+  })();
