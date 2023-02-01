@@ -201,12 +201,13 @@
         border-radius: 2px;
     }
     &__swiper-box {
-        // justify-content: center;
+        justify-content: center;
         width: 515px;
         overflow: hidden;
         @media screen and (min-width: $tablet) {
             width: 428px;
             margin-top: -24px;
+            margin-right: 0;
             // flex-direction: row-reverse;
   
         }
@@ -273,6 +274,15 @@
         display: flex;
         gap: 33px;
         justify-content: flex-start;
+        margin-top: 20px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 32px;
+    
+        }
+        @media screen and (min-width: $desktop) {
+            margin-top: 40px;
+        }
+
     }
     &__button-next,
     &__button-prev {
