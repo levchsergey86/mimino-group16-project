@@ -1,6 +1,6 @@
 .button-transparent {
 
-    padding: 14px 24px;
+    padding: 12px 22px;
     text-align: center;
 
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +9,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    cursor: pointer;
 
     background-color: $button-background-color;
     color: $accent-color;
@@ -20,10 +21,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-    @media screen and (min-width: $desktop) {
-        padding: 14px 35px;
-    }
-
     &:hover,
     &:focus {
         @extend %btn-hvr;
@@ -32,8 +29,8 @@
 
 .button {
 
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-align: center;
     width: 236px;
 
@@ -43,6 +40,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    cursor: pointer;
 
     background-color: $secondary-color;
     color: $accent-color;
@@ -53,11 +51,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
-    @media screen and (min-width: $desktop) {
-        padding: 14px 35px;
-    }
-
     &:hover,
     &:focus {
         @extend %btn-hvr;
@@ -67,7 +60,7 @@
 
 .btn-book {
 
-    padding: 20px 43px;
+    padding: 18px 41px;
     text-align: center;
 
     font-family: 'Montserrat', sans-serif;
@@ -75,6 +68,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    cursor: pointer;
 
     background-color: $secondary-color;
     color: $primary-color;
@@ -87,7 +81,7 @@
 
 
     @media screen and (min-width: $tablet) {
-        padding: 18px 38px;
+        padding: 16px 36px;
         font-size: 24px;
         line-height: 1.208;
     }
@@ -107,7 +101,7 @@
     height: auto;
     max-width: 384px;
 
-    padding: 20px 43px;
+    padding: 18px 41px;
     text-align: center;
 
     font-family: 'Montserrat', sans-serif;
@@ -115,6 +109,7 @@
     font-weight: 500;
     font-size: 19px;
     line-height: 1.2;
+    cursor: pointer;
 
     background-color: $secondary-color;
     color: $primary-color;
@@ -127,10 +122,12 @@
 
     @media (min-width:780px) {
         min-width: 592px;
+        font-size: 24px;
+        padding: 16px 115px;
     }
 
     @media screen and (min-width: $tablet) {
-        padding: 18px 117px;
+        padding: 16px 115px;
         font-size: 24px;
         line-height: 1.208;
     }
@@ -154,14 +151,17 @@
 }
 
 
-.arrow-swiper {
+.arrow-swiper-prev,
+.arrow-swiper-next {
 
     display: block;
     padding: 0;
     background: none;
     border: 0;
 
-    fill: $secondary-color;
+    cursor: pointer;
+
+    
 
     transition-property: fill;
     transition-duration: 250ms;

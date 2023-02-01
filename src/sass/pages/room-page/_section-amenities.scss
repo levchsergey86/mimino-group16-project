@@ -1,46 +1,165 @@
-.room-page__description {
+.amenities {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-color: $main-background-color;
+
+    &__text-2 {
+        margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $main-text-color;
+    }
+
+    &__title-1 {
+        margin-bottom: 0px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.16;
+        color: $secondary-color;
+    }
+
+    &__title-2 {
+        margin-bottom: 0px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        color: $secondary-color;
+    }
+
+
+    &__text-1 {
+
+        margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $main-text-color;
+
+        @media (min-width:$tablet) {
+            max-width: 757px;
+        }
+
+    }
+
+    &__text-2 {
+
+        margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $main-text-color;
+
+        @media (min-width:$tablet) {
+            max-width: 400px;
+        }
+
+    }
+
+    &__text-3 {
+
+        margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $main-text-color;
+
+        @media (min-width:$tablet) {
+            display: block;
+            margin-top: 0px;
+            max-width: 400px;
+        }
+    }
+
+    &__arrow-title {
+        display: flex;
+        gap: 12.75px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $second-text-color;
+
+        @media (min-width:$tablet) {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+
+    &__text-container {
+
+
+        @media (min-width:$tablet) {
+            display: flex;
+            gap: 80px;
+            margin-top: 16px;
+        }
+
+        @media (min-width:$tablet) {
+            display: flex;
+            gap: 159px;
+        }
+    }
+
+    &__buttons-reserv-case {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+
+        @media (min-width:$tablet) {
+            align-items: flex-end;
+            gap: 32px;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__button-case {
+        margin-top: 20px;
+        display: flex;
+        gap: 12.75px;
+
+    
+        @media (min-width:$tablet) {
+            margin-top: 0px;
+        }
+
+    }
+    
+    &__arrow {
+        fill: $second-text-color;
+
+        &:hover,
+        &:focus {
+            fill: $secondary-color;
+        }
+    }
 }
 
-.room-page__title-1 {
-    margin-bottom: 0px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.16;
-    color: $secondary-color;
-}
 
-.room-page__title-2 {
+.aminities__item {
     margin-top: 32px;
-    margin-bottom: 0px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    color: $secondary-color;
 }
 
-.room-page__text-2 {
-    margin-top: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $main-text-color;
-}
 
-.room-page__arrow-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $second-text-color;
+.aminities__item:first-child {
+    margin-top: 0px;
 }

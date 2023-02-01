@@ -116,8 +116,11 @@
     }
 
     &__item:nth-child(3) {
-        @media screen and (min-width: $mobile) and (max-width: $tablet) {
+        @media screen and (min-width: $mobile){
             margin-left: 124px;
+        }
+        @media screen and (min-width: $tablet){
+            margin-left: 0;
         }
     }
     
@@ -142,7 +145,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        padding: 9px 7px 7px 7px;
+        padding: 9px 6px 7px 7px;
 
         border: 0.5px solid $accent-color;
         border-radius: 2px;
@@ -221,13 +224,35 @@
 
    
     &__map-thumb{
-        width: 100%;
-        max-width: 384px;
+        // width: 100%;
+        // display: block;
+        // max-width: 384px;
+       
+        // border: 1px solid $third-text-color;
+        // box-shadow: 2px 2px 60px 2px $shadow-color;
+        // border-radius: 2px;
         
+        // @media screen and (min-width: $tablet) {
+        //     display: flex;
+        //     align-items: center;
+        //     max-width: 535px;  
+
+        // }
+        // @media screen and (min-width: $desktop) {
+        //     max-width: 634px;  
+
+        // } 
+    }
+
+    &__map{
+        width: 100%;
+        display: block;
+        max-width: 384px;
+       
         border: 1px solid $third-text-color;
         box-shadow: 2px 2px 60px 2px $shadow-color;
         border-radius: 2px;
-
+        
         @media screen and (min-width: $tablet) {
             display: flex;
             align-items: center;

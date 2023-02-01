@@ -1,13 +1,18 @@
 .about-kitchen {
   padding: 16px 0 20px 0;
   background-color: $main-background-color;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
   @media screen and (min-width: $tablet) {
-      padding: 0 0 20px 0;
-    }
+    padding: 0 0 20px 0;
+    overflow: visible;
+  }
   &__set-main {
     @media screen and (min-width: $tablet) {
       display: flex;
-      align-items: center; 
+      align-items: center;
       justify-content: flex-start;
       margin-top: -32px;
     }
@@ -23,7 +28,7 @@
     }
     @media screen and (min-width: $tablet) {
       margin-right: 37px;
-  }
+    }
   }
   &__title {
     font-family: 'Times New Roman', sans-serif;
@@ -33,10 +38,10 @@
     color: $title-text-color;
     margin-bottom: 12px;
     @media screen and (min-width: $tablet) {
-    font-size: 32px;
-    margin-bottom: 4px;
+      font-size: 32px;
+      margin-bottom: 4px;
+    }
   }
-}
   &__logo {
     font-family: 'Film P3', sans-serif;
     font-weight: 700;
@@ -46,11 +51,11 @@
     color: $logo-text-color;
     margin-bottom: 12px;
     @media screen and (min-width: $tablet) {
-    font-size: 64px;
-    margin-bottom: 24px;
+      font-size: 64px;
+      margin-bottom: 24px;
+    }
   }
-}
-  
+
   &__description {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -60,25 +65,25 @@
     width: 258px;
     color: $main-text-color;
     @media screen and (min-width: $tablet) {
-        width: 439px;
-        font-size: 16px;
+      width: 439px;
+      font-size: 16px;
     }
     @media screen and (min-width: $desktop) {
-        width: 518px;
+      width: 518px;
     }
-      &--brown {
-        color: $second-text-color;
-        width: 163px;
-        margin-left: 20px;
-        @media screen and (min-width: $tablet) {
+    &--brown {
+      color: $second-text-color;
+      width: 163px;
+      margin-left: 20px;
+      @media screen and (min-width: $tablet) {
         width: 312px;
         margin-left: 48px;
       }
-        @media screen and (min-width: $desktop) {
+      @media screen and (min-width: $desktop) {
         margin-left: 32px;
+      }
     }
   }
-}
   &__img {
     position: relative;
     margin-left: auto;
@@ -96,26 +101,59 @@
     }
     @media screen and (min-width: $tablet) {
       margin-top: -68px;
+    }
   }
+  &__img--border {
+    border-radius: 2px;
   }
-  &__slider {
+
+  &__swiper-btns {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    color: black;
-    background-color: white;
-    width: 315px;
-    height: 297px;
+    gap: 32px;
+
+    margin-top: 20px;
+    
+
+    fill: $secondary-color;
+
+    margin-left: 150px;
+    @media screen and (min-width: $mobile) {
+      margin-left: 217px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-left: 331px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 445px;
+    }
+  }
+
+  &__swiper-thumb {
+    width: 515px;
+
+    margin-left: 69px;
+
+    overflow: hidden;
+
     @media screen and (min-width: $tablet) {
       width: 428px;
-      height: 258px;
-      margin-top: -28px;
-  }
-  @media screen and (min-width: $desktop) {
+
+      margin-left: 489px;
+      margin-top: -60px;
+    }
+
+    @media screen and (min-width: $desktop) {
       width: 548px;
-      height: 326px;
-      margin-top: -148px;
+
+      margin-left: 562px;
+      margin-top: -179px;
+    }
   }
 }
+
+.swiper-slide:last-child {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
