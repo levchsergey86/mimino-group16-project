@@ -154,8 +154,9 @@
     }
 
     &__button {
+        display: block;
         margin-top: 30px;
-        margin-left: 92px;
+        margin-left: auto;
 
         @media (min-width:$tablet) {
             position: absolute;
