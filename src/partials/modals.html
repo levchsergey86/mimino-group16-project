@@ -1,50 +1,271 @@
-<div data-popup-target="presentation" class="popup">
-    <div class="popup__body">
-        <div class="popup__content">
-            <button type="button" class="popup__close close-popup">X</button>
-            <div class="popup__title"><strong>Модалка 1</strong></div>
-            <div class="popup__text">
-                ipsum dolor sit amet consectetur adipisicing elit.
-                Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam
-                dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+<div class="backdrop is-hidden" modal-table>
+  <div class="modal modal__table">
+    <button class="button-close" type="button" modal-close-table>
+      <svg class="button-close__icon" width="22" height="22">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</h3>
+    <form name="book-table-form" class="modal__form">
+      <div class="box-box-box">
+        <div class="box-form-table">
+          <div class="modal__form-field">
+            <div class="modal__form-field__input__margin">
+              <input
+                class="modal__form-field__input"
+                placeholder="Ваше ім’я"
+                id="user-name"
+                type="text"
+                title="Поле повинно містити ім'я."
+                pattern="[Є-Яа-ї]+"
+                required
+              />
             </div>
+            <label class="modal__form-field__label" for="user-name"
+              >На кого забронювати столик?</label
+            >
+          </div>
+
+          <div class="modal__form-field">
+            <div class="modal__form-field__input__margin">
+              <input
+                class="modal__form-field__input js-inputmask"
+                id="user-phone"
+                type="tel"
+                title="Поле повинно містити телефон (+380)."
+              />
+            </div>
+            <label class="modal__form-field__label" for="user-phone"
+              >Номер телефону</label
+            >
+          </div>
         </div>
-    </div>
+
+        <div class="box-form-table__last">
+          <div class="modal__form-field">
+            <div class="modal__form-field__select">
+              <select
+                class="modal__form-field__input"
+                placeholder="2"
+                name="amount-people"
+                id="amount-people"
+                type="number"
+              >
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <svg
+                class="modal__form-field__select__icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
+            <label class="modal__form-field__label" for="amount-people"
+              >Столик на яку кількість осіб?</label
+            >
+          </div>
+
+          <div class="modal__form-field__last">
+            <div class="modal__form-field__select">
+              <select
+                class="modal__form-field__input"
+                placeholder="Сьогодні"
+                name="tabel-book-date"
+                id="tabel-book-date"
+                type="text"
+              >
+                <option value="Сьогодні" selected>Сьогодні</option>
+                <option value="Завтра">Завтра</option>
+              </select>
+              <svg
+                class="modal__form-field__select__icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
+            <label class="modal__form-field__label" for="tabel-book-date"
+              >На яку дату бронювати?</label
+            >
+          </div>
+        </div>
+      </div>
+      <button class="modal-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>
+  </div>
 </div>
-<div data-popup-target="test-modal" class="popup">
-    <div class="popup__body">
-        <div class="popup__content">
-            <button type="button" class="popup__close close-popup">X</button>
-            <div class="popup__title"><strong>Модалка 2</strong></div>
-            <div class="popup__text">
-                ipsum dolor sit amet consectetur adipisicing elit.
-                Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam
-                dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta
-                sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-            </div>
+
+<div class="backdrop is-hidden" modal-room>
+  <div class="modal modal__room">
+    <button class="button-close" type="button" modal-close-room>
+      <svg class="button-close__icon" width="22" height="22">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__title">ЗАБРОНЮВАТИ НОМЕР</h3>
+    <form name="book-table-form" class="modal__form">
+      <div class="box-form-room">
+        <div class="modal__form-field">
+          <div class="modal__form-field__input__margin">
+            <input
+              class="modal__form-field__input"
+              placeholder="Ваше ім’я"
+              id="user-name"
+              type="text"
+              title="Поле повинно містити ім'я."
+              pattern="[Є-Яа-ї]+"
+              required
+            />
+          </div>
+          <label class="modal__form-field__label" for="user-name"
+            >На кого забронювати номер?</label
+          >
         </div>
-    </div>
+
+        <div class="modal__form-field">
+          <div class="modal__form-field__input__margin">
+            <input
+              class="modal__form-field__input js-inputmask"
+              id="user-phone"
+              type="tel"
+              title="Поле повинно містити телефон (+380)."
+            />
+          </div>
+          <label class="modal__form-field__label" for="user-phone"
+            >Номер телефону</label
+          >
+        </div>
+      </div>
+
+      <div class="box-form-room">
+        <div class="modal__form-field">
+          <div class="modal__form-field__select">
+            <select
+              class="modal__form-field__input"
+              placeholder="Двомісний люкс"
+              name="room-book-name"
+              id="room-book-name"
+              type="text"
+            >
+              <option value="Двомісний люкс" selected>Двомісний люкс</option>
+              <option value="Трьохмісний Люкс">Трьохмісний Люкс</option>
+            </select>
+            <svg class="modal__form-field__select__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <label class="modal__form-field__label" for="room-book-name"
+            >Категорія номеру</label
+          >
+        </div>
+      </div>
+
+      <div class="box-form-room__last">
+        <div class="modal__form-field">
+          <div class="modal__form-field__select">
+            <select
+              class="modal__form-field__input"
+              placeholder="Сьогодні"
+              name="room-book-date"
+              id="room-book-date"
+              type="text"
+            >
+              <option value="Сьогодні" selected>Сьогодні</option>
+              <option value="Завтра">Завтра</option>
+            </select>
+            <svg class="modal__form-field__select__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <label class="modal__form-field__label" for="room-book-date"
+            >Дата заїзду</label
+          >
+        </div>
+
+        <div class="modal__form-field__last">
+          <div class="modal__form-field__select">
+            <select
+              class="modal__form-field__input"
+              placeholder="Сьогодні"
+              name="room-book-datefree"
+              id="room-book-datefree"
+              type="text"
+            >
+              <option value="Сьогодні" selected>Сьогодні</option>
+              <option value="Завтра">Завтра</option>
+            </select>
+            <svg class="modal__form-field__select__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <label class="modal__form-field__label" for="room-book-datefree"
+            >Дата виїзду</label
+          >
+        </div>
+      </div>
+      <button class="modal-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>
+  </div>
+</div>
+
+<div class="backdrop is-hidden" modal-price>
+  <div class="modal modal__price">
+    <button class="button-close" type="button" modal-close-price>
+      <svg class="button-close__icon" width="22" height="22">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__title">ЦІНИ НА НОМЕР</h3>
+    <h4 class="modal__room-name">Двомісний люкс</h4>
+    <p class="modal__room-category">Категорія номеру</p>
+    <form name="book-table-form" class="modal__form">
+      <div class="box-form-price">
+        <div class="modal__form-field">
+          <div class="modal__form-field__select">
+            <select
+              class="modal__form-field__input"
+              placeholder="1"
+              name="amount-nights"
+              id="amount-nights"
+              type="number"
+            >
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="2">3</option>
+              <option value="2">4</option>
+            </select>
+            <svg
+              class="modal__form-field__select__icon__price"
+              width="24"
+              height="24"
+            >
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <label class="modal__form-field__label" for="amount-nights"
+            >Кількість ночей</label
+          >
+        </div>
+
+        <div class="modal__form-field__last">
+          <div class="modal__form-field__input__margin">
+            <input
+              class="modal__form-field__input"
+              placeholder="1000"
+              id="price"
+              type="number"
+            />
+          </div>
+          <label class="modal__form-field__label" for="price">грн</label>
+        </div>
+      </div>
+
+      <button class="modal-btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+  </div>
 </div>

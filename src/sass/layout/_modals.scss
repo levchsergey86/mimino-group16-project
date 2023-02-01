@@ -1,0 +1,323 @@
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $shadow-color;
+    z-index: 100;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    
+
+    position:fixed;
+    background-color: $main-background-color;
+    padding: 60px 15px 60px;
+    max-width: 414px;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+
+    @media (min-width: 780px) {
+        padding: 60px;
+    }
+
+    &__table {
+        max-height: 668px;
+
+        @media (min-width: 780px) {
+            max-width: 712px;
+            max-height: 522px;
+            border-radius: 2px;
+        }
+    }
+    
+    &__room {
+        max-height: 780px;
+
+        @media (min-width: 780px) {
+            max-width: 712px;
+            max-height: 638px;
+            border: 1px solid #F3C653;
+            border-radius: 2px;
+        }
+    }
+    
+    &__price {
+        max-height: 572px;
+
+        @media (min-width: 780px) {
+            max-width: 712px;
+            max-height: 479px;
+            border: 1px solid #F3C653;
+            border-radius: 2px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color: $secondary-color;
+        margin-bottom: 40px;
+
+        @media (min-width: 780px) {
+            font-size: 32px;
+        }
+    }
+
+    &__room-name{
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color: $placeholder-text-color;
+        margin-bottom: 28px;
+    }
+
+    &__room-category {
+        font-size: 16px;
+        line-height: 1.21;
+        color: $second-text-color;
+        margin-bottom: 20px;
+    }
+
+    &__form-field {
+
+        margin-bottom: 20px;
+
+        @media (min-width: 780px) {
+            margin-bottom: 0;
+        }
+        
+        &__last {
+            margin-bottom: 0;
+        }
+
+        &__select {
+            position: relative;
+            margin-bottom: 8px;
+            cursor: pointer;
+            appearance: none;
+
+            &__icon {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                fill: $second-text-color;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+                &__price {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    fill: $second-text-color;
+                    transition-property: fill;
+                    transition-duration: 250ms;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+                    @media (max-width: 779px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        &__input {
+            font-size: 20px;
+            line-height: 1.15;
+            letter-spacing: 0.05em;
+            width: 100%;
+            height: 54px;
+            padding: 12px 16px;
+            color: $placeholder-text-color;
+            background-color: $main-background-color;
+            border: 1px solid $second-text-color;
+            border-radius: 2px;
+            cursor: pointer;
+            appearance: none;
+            transition-property: border-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            
+            &:hover + .modal__form-field__select__icon {
+
+                fill: $secondary-color;
+            }
+
+            &:hover{
+                border-color: $secondary-color;
+            }
+
+            &:focus + .modal__form-field__select__icon {
+
+                fill: $secondary-color;
+            }
+
+            &:focus{
+                border-color: $secondary-color;
+            }
+
+            &:hover + .modal__form-field__select__icon__price {
+
+                fill: $secondary-color;
+            }
+
+            &:hover{
+                border-color: $secondary-color;
+            }
+
+            &:focus + .modal__form-field__select__icon__price {
+
+                fill: $secondary-color;
+            }
+
+            &:focus{
+                border-color: $secondary-color;
+            }
+
+
+            &__margin {
+                margin-bottom: 8px;
+            }
+            
+            
+
+            @media (min-width: 780px) {
+                min-width: 288px;
+                min-height: 64px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__label {
+            color: $second-text-color;
+            margin-left: 12px;
+
+            @media (min-width: 780px) {
+                margin-bottom: 0;
+            }
+           
+
+
+        }
+    }
+}
+
+.button-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background-color: $main-background-color;
+    cursor: pointer;
+
+    &__icon {
+        fill: $secondary-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            fill: $accent-color;
+        }
+    }
+}
+
+
+.box-form-price {
+
+    display: block;
+    margin-bottom: 40px;
+
+    @media (min-width: 780px) {
+        display: flex;
+        gap: 20px;
+        
+    }
+   
+}
+
+.box-form-room {
+
+    display: block;
+
+    &__last{
+        margin-bottom: 40px;
+
+        @media (min-width: 780px) {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (min-width: 780px) {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-bottom: 28px;
+    }
+   
+}
+
+.box-form-table {
+    display: block;
+    margin-bottom: 20px;
+    gap: 28px;
+
+    &__last{
+        margin-bottom: 40px;
+        gap: 28px;
+
+        @media (min-width: 780px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 780px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.box-box-box {
+    display: block;
+
+    @media (min-width: 780px) {
+        display: flex;
+        gap: 22px;
+    }
+}
+
+
+
+
+
+
+
