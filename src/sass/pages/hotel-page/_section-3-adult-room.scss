@@ -31,6 +31,7 @@
 
     @include for-size(desktop) {
         width: $desktop;
+        padding-bottom: 40px;
     }
 
     & .container {
@@ -143,15 +144,31 @@
 
         .section-description {
             max-width: 242px;
-            margin-left: initial;
+            margin-left: auto;
+            margin-right: 59px;
+
+            @include for-size(tablet) {
+                max-width: 400px;
+                margin-bottom: 188px;
+                margin-right: -20px;
+            }
+
+            @include for-size(desktop) {
+                max-width: 400px;
+                margin-right: 57px;
+                // left: 95px;
+            }
         }
+
+
 
         .room-list__image {
 
             // width: 244px;
             // margin-bottom: 32px;
-            // margin-left: 0;
-            // margin-right: auto;
+            margin-left: initial;
+            margin-right: auto;
+
             @include for-size(tablet) {
                 width: 400px;
                 // height: 524px;
@@ -162,10 +179,17 @@
                 // right: 97px;
             }
 
+            @include for-size(desktop) {
+                width: 460px;
+                left: 95px;
+            }
+
         }
 
         .room-list__item-slider {
-            left: initial;
+            // left: initial;
+            left: 115px;
+            justify-content: flex-end;
 
             .room-list__button-more {
                 margin-left: 0;
@@ -175,10 +199,12 @@
 
 
             @include for-size(tablet) {
-                // right: initial;
+                left: initial;
             }
 
-            @include for-size(desktop) {}
+            @include for-size(desktop) {
+                left: initial;
+            }
         }
 
         .room-list__button-slider {
@@ -200,6 +226,12 @@
 
         .logo {
             text-align: right;
+            margin-right: -10px;
+
+            @include for-size(tablet) {
+                margin-right: -20px;
+            }
+
         }
 
         .section-title {
@@ -343,7 +375,13 @@
     @include for-size (tablet) {
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: 0.02em;
+        // letter-spacing: 0.02em;
+    }
+
+    @include for-size(desktop) {
+        max-width: 400px;
+        margin-bottom: 188px;
+        // left: 95px;
     }
 }
 
