@@ -35,18 +35,6 @@
         color: $main-text-color;
     }
 
-    &__arrow-title {
-        margin-left: 16px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
-        color: $second-text-color;
-    }
-
-
     &__title-1 {
         margin-bottom: 0px;
         font-family: 'Times New Roman';
@@ -122,6 +110,8 @@
     }
 
     &__arrow-title {
+        display: flex;
+        gap: 12.75px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
@@ -176,7 +166,6 @@
 
     }
     
-
     &__arrow {
         fill: $second-text-color;
 
@@ -186,3 +175,4 @@
         }
     }
 }
+
