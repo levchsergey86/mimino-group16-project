@@ -262,6 +262,20 @@
 
 }
 
+.swiper-slide:last-child {
+
+    @media screen and (min-width: $tablet) {
+    
+          display: none;
+              
+          }
+
+}
+
+// .swiper-slide {
+
+//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+// }
 
 
 // .swiper-inner {
