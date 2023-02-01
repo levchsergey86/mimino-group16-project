@@ -196,7 +196,7 @@
         gap: 32px;
     
         margin-top: 20px;
-        margin-left: 286px;
+        margin-left: 217px;
     
         fill: $secondary-color;
     
@@ -219,6 +219,8 @@
     &__swiper-thumb {
 
         width: 515px;
+
+        margin-left: 69px;
     
         overflow: hidden;
     
@@ -243,22 +245,6 @@
         
     }
 
-    &__swiper-wrapper {
-
-        
-
-    
-        margin-left: 69px;
-    
-        @media screen and (min-width: $tablet) {
-    
-            margin-left: 0;
-                  
-              }
-    
-        
-        
-    }
 
 }
 
@@ -272,14 +258,4 @@
 
 }
 
-// .swiper-slide {
-
-//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-// }
-
-
-// .swiper-inner {
-//     // width: 245px;
-
-// }
 
