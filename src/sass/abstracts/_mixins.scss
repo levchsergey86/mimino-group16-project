@@ -1,9 +1,24 @@
 @mixin for-size($size) {
-    @if $size == phone-only {
-      @media (max-width: 413px) { @content; }
-    } @else if $size == tablet {
-      @media (min-width: 1024px) { @content; }
-    } @else if $size == desktop {
-      @media (min-width: 1280px) { @content; }
+  @if $size == phone-only {
+    @media (max-width: 413px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: 1280px) {
+      @content;
     }
   }
+}
+
+//_____RETINA IMAGES
+@mixin retina2x {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
