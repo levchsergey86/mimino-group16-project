@@ -114,6 +114,7 @@
     }
 
     &__caption {
+
         font-family: 'Film P3';
         font-weight: 700;
         font-size: 40px;
@@ -179,7 +180,6 @@
         color: $second-text-color;
         width: 100%;
 
-    }
     &__card--first {
         margin-right: 140px;
 
@@ -242,4 +242,5 @@
             @extend %arrow-hvr;
         }
     }
+
 }
