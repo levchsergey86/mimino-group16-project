@@ -1,5 +1,4 @@
 .contacts{
-    max-width: $desktop;
     margin-left: auto;
     margin-right: auto;
 
@@ -116,8 +115,11 @@
     }
 
     &__item:nth-child(3) {
-        @media screen and (min-width: $mobile) and (max-width: $tablet) {
+        @media screen and (min-width: $mobile){
             margin-left: 124px;
+        }
+        @media screen and (min-width: $tablet){
+            margin-left: 0;
         }
     }
     
@@ -217,28 +219,6 @@
 
     &__location-icon{
         fill: $second-text-color;
-    }
-
-   
-    &__map-thumb{
-        // width: 100%;
-        // display: block;
-        // max-width: 384px;
-       
-        // border: 1px solid $third-text-color;
-        // box-shadow: 2px 2px 60px 2px $shadow-color;
-        // border-radius: 2px;
-        
-        // @media screen and (min-width: $tablet) {
-        //     display: flex;
-        //     align-items: center;
-        //     max-width: 535px;  
-
-        // }
-        // @media screen and (min-width: $desktop) {
-        //     max-width: 634px;  
-
-        // } 
     }
 
     &__map{

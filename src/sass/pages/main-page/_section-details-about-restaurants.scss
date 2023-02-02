@@ -1,0 +1,313 @@
+.det-rest {
+
+  background-color: $second-background-color;
+
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 40px;
+
+    overflow: hidden;
+
+    max-width: $mobile;
+
+    @media screen and (min-width: $tablet) {
+
+        padding-top: 48px;
+
+        max-width: $tablet;
+        }
+   
+  
+      @media screen and (min-width: $desktop) {
+  
+        max-width: 1600px;
+  
+        }
+
+
+    margin-left: auto;
+    margin-right: auto;
+  
+ 
+    background-color: $overlay-hero-color;
+  
+    background-image: linear-gradient(
+        to right,
+        $overlay-hero-color,
+        $overlay-hero-color
+      ),
+      url('../images/homepage/homepage-section2-background-414.jpg');
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+          to right,
+          $overlay-hero-color,
+          $overlay-hero-color
+        ), url('../images/homepage/homepage-section2-background-414@2x.jpg');
+ 
+      }
+
+    @media screen and (min-width: 577px) {
+
+        background-image: linear-gradient(
+          to right,
+          $overlay-hero-color,
+          $overlay-hero-color
+        ),
+        url('../images/homepage/homepage-section2-background-1024.jpg');
+
+        @media (min-resolution: 2dppx) {
+          background-image: linear-gradient(
+            to right,
+            $overlay-hero-color,
+            $overlay-hero-color
+          ), url('../images/homepage/homepage-section2-background-1024@2x.jpg');
+   
+        }
+        
+      }
+
+      @media screen and (min-width: 1025px) {
+
+        background-image: linear-gradient(
+          to right,
+          $overlay-hero-color,
+          $overlay-hero-color
+        ),
+        url('../images/homepage/homepage-section2-background-1280.jpg');
+
+        @media (min-resolution: 2dppx) {
+          background-image: linear-gradient(
+            to right,
+            $overlay-hero-color,
+            $overlay-hero-color
+          ), url('../images/homepage/homepage-section2-background-1280@2x.jpg');
+   
+        }
+        
+      }
+
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+
+    &__logo {
+        margin-bottom: 12px;
+
+        font-family: 'Film P3';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.075;
+
+        letter-spacing: 0.3em;
+
+        color: $primary-color;
+
+        @media screen and (min-width: $tablet) {
+
+            margin-bottom: 16px;
+
+            font-size: 64px;
+            line-height: 1.078;
+
+            }
+       
+      
+          @media screen and (min-width: $desktop) {
+      
+            }
+
+
+
+    }
+
+    &__title {
+        margin-bottom: 20px;;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+
+        color: $primary-color;
+
+        @media screen and (min-width: $tablet) {
+
+            margin-bottom: 8px;
+
+            font-size: 24px;
+            line-height: 1.208;
+            }
+       
+      
+          @media screen and (min-width: $desktop) {
+      
+       
+      
+            }
+    }
+
+    &__paragraph {
+        max-width: 259px;
+
+        margin-bottom: 48px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+
+        color: $third-text-color;
+
+        @media screen and (min-width: $tablet) {
+
+            margin-bottom: 40px;
+
+            max-width: 610px;
+
+            font-size: 16px;
+            line-height: 1.25;
+            }
+       
+      
+          @media screen and (min-width: $desktop) {
+      
+       
+      
+            }
+    }
+
+    &__header {
+        margin-left: 125px;
+
+
+
+        @media screen and (min-width: $tablet) {
+
+            margin-left: 231px;
+            
+            }
+       
+      
+          @media screen and (min-width: $desktop) {
+      
+        margin-left: 253px;
+      
+            }
+    }
+
+    &__swiper-thumb {
+
+        width: 568px;
+
+        margin-left: 25px;
+        margin-bottom: 32px;
+
+        overflow: hidden;
+
+        @media screen and (min-width: $tablet) {
+
+            width: 662px;
+    
+            margin-left: 0;
+            margin-right: 3px;
+                  
+              }
+              
+        @media screen and (min-width: $desktop) {
+
+            width: 876px;
+
+            margin-right: -33px;
+    
+            
+                  
+              }
+       
+    }
+
+    &__swiper-btns {
+
+        display: flex;
+        gap: 32px;
+    
+        margin-top: 16px;
+
+        fill: $primary-color;
+    
+        @media screen and (min-width: $tablet) {
+    
+            margin-top: 24px;
+                  
+              }
+              
+
+    }
+
+    &__buttons-thumb {
+        text-align: center;
+
+        @media screen and (min-width: $tablet) {
+    
+            padding-top: 158px;
+
+            margin-right: 29px;
+            
+                  
+              }
+              
+        @media screen and (min-width: $desktop) {
+
+            width: 236px;
+            margin-right: 32px;
+            
+                  
+              }
+
+    }
+
+    &__btn-geometry {
+
+        margin-bottom: 16px;
+
+    }
+
+    &__link-geometry {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 236px;
+    }
+
+    &__thumb {
+
+        @media screen and (min-width: $tablet) {
+    
+            display: flex;
+            flex-direction: row-reverse;
+                  
+              }
+              
+        @media screen and (min-width: $desktop) {
+    
+        
+                  
+              }
+    }
+
+    &__img--cover {
+
+      height: 270px;
+      object-fit: cover;
+    }
+}
+

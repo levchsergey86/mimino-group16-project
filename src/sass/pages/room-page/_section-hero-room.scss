@@ -1,18 +1,84 @@
 .hero-room {
-    position: relative;
+    max-width: 1280px;
     padding-top: 484px;
     padding-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $second-background-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image:
         url(../images/roompage/roompage-hero-mobile.jpg);
 
-    @media (min-width: $tablet) {
-        background-image: url(../images/roompage/roompage-hero-tablet.jpg);
-        padding-bottom: 102px;
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image:
+            url(../images/roompage/roompage-hero-mobile@2x.jpg);
+    }
+
+    @media screen and (min-width: $mobile) {
+        background-image:
+            url(../images/roompage/roompage-hero-tablet.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/roompage/roompage-hero-tablet@2x.jpg);
+            }
+    }
+
+
+    @media screen and (min-width: $tablet) {
+        height: 718px;
+        background-image:
+            url(../images/roompage/roompage-hero-tablet.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/roompage/roompage-hero-tablet@2x.jpg);
+            }
+    }
+
+
+
+    @media screen and (min-width: $desktop) {
+        max-height: 720px;
+        max-width: 1280px;
+        background-image:
+            url(../images/roompage/roompage-hero-desktop.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/roompage/roompage-hero-desktop@2x.jpg);
+            }
+    }
+
+
+
+
+    &__gradient {
+        position: absolute;
+        top: 0px;
+        height: 143px;
+        width: 100%;
+        max-width: 1280px;
+        background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &__container {
+        position: relative;
     }
 
     &__adres-box {
         position: absolute;
-        top: 64px;
+        bottom: 541px;
         right: 15px;
         display: flex;
         padding: 8px 6px;
@@ -29,9 +95,18 @@
             padding: 10px 8px;
             max-width: 285px;
             max-height: 56px;
-            left: 45px;
-            top: 640px;
+            left: 47px;
+            top: 165px;
 
+        }
+
+        @media (min-width:$desktop) {
+            position: absolute;
+            padding: 10px 8px;
+            max-width: 285px;
+            max-height: 56px;
+            left: 85px;
+            top: 165px;
         }
 
     }
@@ -66,7 +141,7 @@
 
     &__title {
         margin-bottom: 0px;
-        max-width: 570px;
+        max-width: 325px;
         font-family: 'Times New Roman';
         font-style: normal;
         font-weight: 700;
@@ -78,13 +153,14 @@
         @media (min-width:$tablet) {
             font-size: 36px;
             ine-height: 1.15;
+            max-width: 570px;
         }
     }
 
     &__text-1 {
         margin-top: 14px;
         margin-right: auto;
-        max-width: 400px;
+        max-width: 325px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -96,12 +172,15 @@
         @media (min-width:$tablet) {
             font-size: 16px;
             line-height: 1.22;
+            max-width: 400px;
         }
     }
 
     &__button {
+        display: block;
         margin-top: 30px;
-        margin-left: 92px;
+        margin-left: auto;
+        margin-right: 38px;
 
         @media (min-width:$tablet) {
             position: absolute;
@@ -109,17 +188,14 @@
             margin-left: 0px;
             bottom: 62px;
             right: 47px;
+            margin-right: 0px;
         }
-    }
 
-    &__forward_arrow {
-        top: 350px;
-        right: 15px;
-    }
-
-    &__back_arrow {
-        top: 350px;
-        left: 15px;
+        @media (min-width:$desktop) {
+            position: absolute;
+            bottom: 66px;
+            right: 85px;
+        }
     }
 
     &__forward_arrow,
@@ -138,6 +214,37 @@
         }
     }
 
+    &__forward_arrow {
+        top: -133px;
+        right: 15px;
+
+        @media (min-width:$tablet) {
+            top: -128px;
+            right: 47px;
+        }
+
+        @media (min-width:$desktop) {
+            top: -112px;
+            right: 85px;
+        }
+    }
+
+    &__back_arrow {
+        top: -128px;
+        left: 15px;
+
+
+        @media (min-width:$tablet) {
+            top: -128px;
+            left: 47px;
+        }
+
+        @media (min-width:$desktop) {
+            top: -112px;
+            left: 85px;
+        }
+    }
+
     &__svg {
         border: 0;
         margin: 0;
@@ -147,17 +254,17 @@
 
     &__social-list {
         position: absolute;
-        left: 16px;
-        bottom: 17px;
+        left: 15px;
+        bottom: -23px;
         display: flex;
         flex-direction: column;
         gap: 11px;
 
-@media screen and (min-width: $tablet) {
-    flex-direction: row;
-    left: 373px;
-    bottom: 37px;
-}
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            left: 373px;
+            bottom: -65px;
+        }
 
         @media screen and (min-width: $desktop) {
             display: none;

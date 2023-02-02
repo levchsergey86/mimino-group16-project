@@ -1,11 +1,12 @@
 .footer{
-    max-width: $desktop;
     margin-left: auto;
     margin-right: auto;
     background-color: $footer-background-color;
+    padding: 40px 0;
+
     @media screen and (min-width: $mobile) {
         height: 240px;
-        padding: 40px 0;
+        
     }
 
     @media screen and (min-width: $tablet) {
