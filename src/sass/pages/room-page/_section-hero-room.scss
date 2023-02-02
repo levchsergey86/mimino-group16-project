@@ -1,56 +1,58 @@
 .hero-room {
-    max-width: 1280px;
-    padding-top: 484px;
-    padding-bottom: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: $second-background-color;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image:
-        url(../images/roompage/roompage-hero-mobile.jpg);
+    background-color:  $main-background-color;
 
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        background-image:
-            url(../images/roompage/roompage-hero-mobile@2x.jpg);
-    }
-
-    @media screen and (min-width: $mobile) {
-        background-image:
-            url(../images/roompage/roompage-hero-tablet.jpg);
-
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image:
-                    url(../images/roompage/roompage-hero-tablet@2x.jpg);
-            }
-    }
-
-
-    @media screen and (min-width: $tablet) {
-        height: 718px;
-        background-image:
-            url(../images/roompage/roompage-hero-tablet.jpg);
-
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image:
-                    url(../images/roompage/roompage-hero-tablet@2x.jpg);
-            }
-    }
-
-
-
-    @media screen and (min-width: $desktop) {
-        max-height: 720px;
+    &__background {
         max-width: 1280px;
+        padding-top: 484px;
+        padding-bottom: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         background-image:
-            url(../images/roompage/roompage-hero-desktop.jpg);
+            url(../images/roompage/roompage-hero-mobile.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image:
+                url(../images/roompage/roompage-hero-mobile@2x.jpg);
+        }
+
+        @media screen and (min-width: $mobile) {
+            background-image:
+                url(../images/roompage/roompage-hero-tablet.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/roompage/roompage-hero-tablet@2x.jpg);
+            }
+        }
+
+
+        @media screen and (min-width: $tablet) {
+            height: 718px;
+            background-image:
+                url(../images/roompage/roompage-hero-tablet.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/roompage/roompage-hero-tablet@2x.jpg);
+            }
+        }
+
+
+
+        @media screen and (min-width: $desktop) {
+            max-height: 720px;
+            max-width: 1280px;
+            background-image:
+                url(../images/roompage/roompage-hero-desktop.jpg);
 
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -58,10 +60,9 @@
                 background-image:
                     url(../images/roompage/roompage-hero-desktop@2x.jpg);
             }
+        }
+
     }
-
-
-
 
     &__gradient {
         position: absolute;
