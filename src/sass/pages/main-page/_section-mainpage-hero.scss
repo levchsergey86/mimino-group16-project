@@ -1,10 +1,9 @@
-.home-hero{
-    &__section {
+.home-hero--bg {
      position: relative;
      padding: 181px 0 20px;
      margin: 0 auto;
      max-width: $desktop;
-     max-height: 740px;
+     min-height: 740px;
      background-image: linear-gradient(to bottom, $overlay-hero-color, $overlay-hero-color ), url("../images/homepage/homepage-hero-background-414.jpg");
      background-position: center;
      background-repeat: no-repeat;
@@ -37,8 +36,9 @@
             }
         }
     }
-}
 .main-hero{
+    background-color: $main-background-color;
+    
     &__container{
         margin-bottom: 113px;
         position: relative;
@@ -53,12 +53,15 @@
     }
     &__title{
         margin-bottom: 24px;
+        font-size: 90px;
         text-transform: uppercase;
         font-family: 'Film P3';
-        font-size: 96px;
         font-weight: 700;
         line-height: 1.075;
         letter-spacing: 0.3em;
+        @media (min-width:$mobile) {
+            font-size: 96px;
+        }
         @media (min-width:$tablet) {
             margin-bottom: 16px;
             font-size: 128px;
@@ -72,9 +75,12 @@
     &__subtitle{
         margin-bottom: 40px;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.25;
         letter-spacing: 0.02em;
+        @media (min-width:$mobile) {
+            font-size: 16px;
+        }
         @media (min-width:$tablet) {
             margin-bottom: 56px;
             font-size: 20px;
@@ -89,15 +95,16 @@
         text-transform: uppercase;
         font-family: 'Times New Roman';
         font-weight: 700;
-        font-size: 32px;
+        font-size: 30px;
         line-height: 1.156;
         letter-spacing: 0.05em;
+        @media (min-width:$mobile) {
+            font-size: 32px;
+        }
         @media (min-width:$tablet) {
             font-size: 36px;
             line-height: 1.139;
-
-        }
-              
+        }    
     }
     &__adres-box{
         position: absolute;
@@ -148,18 +155,20 @@
 .button-block{
     display:flex;
     align-items: center;
-    margin-bottom: 56px;
     gap: 24px;
     flex-direction: column;
     @media (min-width:$tablet) {
+        position: absolute;
+        bottom: 64px;
+        right: 47px;
         gap: 40px;
-        margin-bottom: 28px;
         flex-direction: row;
-        justify-content: flex-end;
     }
     @media (min-width:$desktop) {
-        margin-bottom: 0;
+        bottom: 65px;
+        right: 85px;
         gap: 60px;
+
     }
     
 }
@@ -167,7 +176,12 @@
     &__title{
         display: flex;
         gap: 20px;
-        max-width: 112px;
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        @media (min-width:$tablet) {
+            left: 47px;
+        }
         @media (min-width:$desktop) {
             display: none;
         }
