@@ -1,13 +1,13 @@
-.rest-hero--bg {        
-    position: relative;
-    padding: 181px 0 20px;
-    margin: 0 auto;
-    max-width: $desktop;
-    min-height: 740px;
-    background-image: linear-gradient(to bottom, $overlay-hero-color, $overlay-hero-color ), url("../images/restorant/restoran-hero-414px.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.rest-hero--bg {
+        position: relative;
+        padding: 181px 0 20px;
+        margin: 0 auto;
+        max-width: $desktop;
+        min-height: 740px;
+        background-image: linear-gradient(to bottom, $overlay-hero-color, $overlay-hero-color ), url("../images/restorant/restoran-hero-414px.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -17,7 +17,7 @@
         }
 
     @media (min-width:$tablet) {
-        max-height: 720px;
+        min-height: 720px;
         padding: 188px 0 15px;
         background-image: linear-gradient(to bottom, $overlay-hero-color, $overlay-hero-color ), url("../images/restorant/restoran-hero-720px.jpg");
 
@@ -39,5 +39,5 @@
         (min-resolution: 2dppx) {
             background-image: linear-gradient(to bottom, $overlay-hero-color, $overlay-hero-color ), url("../images/restorant/restoran-hero-pc@2x.jpg");
             }
-    }
+        }
 }
