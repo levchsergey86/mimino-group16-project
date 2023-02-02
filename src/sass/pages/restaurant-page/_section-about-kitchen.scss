@@ -1,0 +1,163 @@
+.about-kitchen {
+  padding: 16px 0 20px 0;
+  background-color: $main-background-color;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  @media screen and (min-width: $tablet) {
+    padding: 0 0 20px 0;
+    overflow: visible;
+  }
+  &__set-main {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  &__content {
+    margin-bottom: 28px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+      margin-right: 26px;
+      margin-top: -32px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-right: 37px;
+      margin-top: -33px;
+    }
+  }
+  &__title {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $title-text-color;
+    margin-bottom: 12px;
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+      margin-bottom: 4px;
+    }
+  }
+  &__logo {
+    font-family: 'Film P3', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: $logo-text-color;
+    margin-bottom: 12px;
+    @media screen and (min-width: $tablet) {
+      font-size: 64px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    width: 258px;
+    color: $main-text-color;
+    @media screen and (min-width: $tablet) {
+      width: 439px;
+      font-size: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 518px;
+    }
+    &--brown {
+      color: $second-text-color;
+      width: 163px;
+      margin-left: 20px;
+      @media screen and (min-width: $tablet) {
+        width: 312px;
+        margin-left: 48px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-left: 32px;
+      }
+    }
+  }
+  &__img {
+    position: relative;
+    margin-left: auto;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    z-index: 60;
+    &--margin-top {
+      @media screen and (min-width: $tablet) {
+        margin-top: -32px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-top: -33px;
+      }
+    }
+  }
+  &__set-secondary {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      margin-top: -16px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: -68px;
+    }
+  }
+  &__img--border {
+    border-radius: 2px;
+  }
+
+  &__swiper-btns {
+    display: flex;
+    gap: 32px;
+
+    margin-top: 20px;
+
+    fill: $secondary-color;
+
+    margin-left: 150px;
+    @media screen and (min-width: $mobile) {
+      margin-left: 217px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-left: 331px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 445px;
+    }
+  }
+
+  &__swiper-thumb {
+    width: 515px;
+
+    margin-left: 69px;
+
+    overflow: hidden;
+
+    @media screen and (min-width: $tablet) {
+      width: 428px;
+
+      margin-left: 489px;
+      margin-top: -28px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 548px;
+
+      margin-left: 562px;
+      margin-top: -148px;
+    }
+  }
+}
+
+.swiper-slide:last-child {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

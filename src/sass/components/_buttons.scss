@@ -1,7 +1,6 @@
-
 .button-transparent {
 
-    padding: 14px 24px;
+    padding: 12px 22px;
     text-align: center;
 
     font-family: 'Montserrat', sans-serif;
@@ -10,6 +9,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    cursor: pointer;
 
     background-color: $button-background-color;
     color: $accent-color;
@@ -19,116 +19,157 @@
     transition-property: background-color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 
-    @media screen and (min-width: $desktop) {
-        padding: 14px 35px;
-    }
 
     &:hover,
     &:focus {
         @extend %btn-hvr;
-  } 
+    }
 }
 
 .button {
 
-padding-top: 14px;
-padding-bottom: 14px;
-text-align: center;
-width: 236px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    width: 236px;
 
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.02em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    cursor: pointer;
 
-background-color: $secondary-color;
-color: $accent-color;
-border: 2px solid $primary-color;
-border-radius: 25px;
+    background-color: $secondary-color;
+    color: $accent-color;
+    border: 2px solid $primary-color;
+    border-radius: 25px;
 
-transition-property: background-color, border;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
-@media screen and (min-width: $desktop) {
-    padding: 14px 35px;
-}
-
-&:hover,
-&:focus {
-    @extend %btn-hvr;
-} 
+    &:hover,
+    &:focus {
+        @extend %btn-hvr;
+    }
 
 }
 
 .btn-book {
 
-padding: 20px 43px;
-text-align: center;
+    padding: 18px 41px;
+    text-align: center;
 
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    cursor: pointer;
 
-background-color: $secondary-color;
-color: $primary-color;
-border: 1px solid $accent-color;
-border-radius: 25px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 1px solid $accent-color;
+    border-radius: 25px;
 
-transition-property: background-color, color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-@media screen and (min-width: $tablet) {
-    padding: 18px 38px;
-    font-size: 24px;
-    line-height: 1.208;
-}
+    @media screen and (min-width: $tablet) {
+        padding: 16px 36px;
+        font-size: 24px;
+        line-height: 1.208;
+    }
 
-&:hover,
-&:focus {
-    @extend %book-hvr;
-} 
+    &:hover,
+    &:focus {
+        @extend %book-hvr;
+    }
 }
 
 .modal-btn {
 
-padding: 20px 43px;
-text-align: center;
+    display: block;
+    margin: 0 auto;
 
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
+    width: 100%;
+    height: auto;
+    max-width: 384px;
 
-background-color: $secondary-color;
-color: $primary-color;
-border: 1px solid $accent-color;
-border-radius: 2px;
+    padding: 18px 41px;
+    text-align: center;
 
-transition-property: background-color, color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.2;
+    cursor: pointer;
 
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 1px solid $accent-color;
+    border-radius: 2px;
 
-@media screen and (min-width: $tablet) {
-    padding: 18px 117px;
-    font-size: 24px;
-    line-height: 1.208;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width:780px) {
+        min-width: 592px;
+        font-size: 24px;
+        padding: 16px 115px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 16px 115px;
+        font-size: 24px;
+        line-height: 1.208;
+    }
+
+    &:hover,
+    &:focus {
+        @extend %book-hvr;
+    }
+
 }
 
-&:hover,
-&:focus {
-    @extend %book-hvr;
-} 
+
+.arrow-hero {
+    display: block;
+    padding: 0;
+    height: 40px;
+
+    background-color: $arrow-hero-background;
+    border: 0;
+    fill: $accent-color;
+}
+
+
+.arrow-swiper-prev,
+.arrow-swiper-next {
+
+    display: block;
+    padding: 0;
+    background: none;
+    border: 0;
+
+    cursor: pointer;
+
+    
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        @extend %arrow-hvr;
+    }
 
 }
