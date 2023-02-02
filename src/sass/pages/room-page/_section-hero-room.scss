@@ -210,7 +210,7 @@
 
         &:hover,
         &:focus {
-            @extend %arrow-hvr;
+            fill: $primary-color;
         }
     }
 
