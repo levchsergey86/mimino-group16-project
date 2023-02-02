@@ -70,10 +70,9 @@
         &__content {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-
             margin-bottom: 28px;
 
+            
             @media screen and (min-width: $tablet) {
                 justify-content: center;
                 margin-bottom: 0;
@@ -82,10 +81,14 @@
             @media screen and (min-width: $desktop) {
                 margin-top: 120px;
             }
-
-            @media screen and (max-width: 1023px) {
-                &--right {
-                    margin-left: 143px;
+            &--right {
+                margin-left: 80px;
+                @media screen and (min-width: $mobile) {
+                        margin-left: 143px;
+                }
+                @media screen and (min-width: $desktop) {
+                    margin-top: 120px;
+                    margin-left: 0;
                 }
             }
         }
