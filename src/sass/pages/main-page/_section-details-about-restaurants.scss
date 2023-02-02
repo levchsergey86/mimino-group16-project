@@ -20,7 +20,7 @@
   
       @media screen and (min-width: $desktop) {
   
-        max-width: 1600px;
+        max-width: $desktop;
   
         }
 
@@ -305,7 +305,7 @@
     }
 
     &__img--cover {
-
+      width: 270px;
       height: 270px;
       object-fit: cover;
     }

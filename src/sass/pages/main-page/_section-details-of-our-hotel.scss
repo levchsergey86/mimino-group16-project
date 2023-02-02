@@ -183,7 +183,9 @@
 // }
 
 .img-wrap {
-  max-width: 100%;
+  // max-width: 100%;
+  width: 270px;
+  object-fit: cover;
   display: block;
   height: 270px;
 }
