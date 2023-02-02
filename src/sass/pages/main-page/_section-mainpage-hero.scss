@@ -1,5 +1,5 @@
 .home-hero--bg {
-     position: relative;
+     
      padding: 181px 0 20px;
      margin: 0 auto;
      max-width: $desktop;
@@ -38,7 +38,7 @@
     }
 .main-hero{
     background-color: $main-background-color;
-    
+    position: relative;
     &__container{
         margin-bottom: 113px;
         position: relative;
