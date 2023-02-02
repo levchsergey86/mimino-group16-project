@@ -196,9 +196,15 @@
         gap: 32px;
     
         margin-top: 20px;
-        margin-left: 217px;
+        margin-left: 140px;
     
         fill: $secondary-color;
+
+        @media screen and (min-width: $mobile) {
+
+            margin-left: 217px;
+            
+        }
     
         @media screen and (min-width: $tablet) {
     
@@ -220,9 +226,15 @@
 
         width: 515px;
 
-        margin-left: 69px;
+        margin-left: 60px;
     
         overflow: hidden;
+
+        @media screen and (min-width: $mobile) {
+
+            margin-left: 69px;
+            
+        }
     
     
         @media screen and (min-width: $tablet) {
