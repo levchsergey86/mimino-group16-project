@@ -1,6 +1,9 @@
 .hero-room {
     padding-top: 484px;
     padding-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $main-background-color;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,33 +17,49 @@
             url(../images/roompage/roompage-hero-mobile@2x.jpg);
     }
 
-    @media screen and (min-width: $tablet) {
-        // max-width: 1024px;
-        height: 718px;
+    @media screen and (min-width: $mobile) {
         background-image:
             url(../images/roompage/roompage-hero-tablet.jpg);
-    }
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        background-image:
-            url(../images/roompage/roompage-hero-tablet@2x.jpg);
-    }
-
-        @media screen and (min-width: $desktop) {
-            // max-width: 1024px;
-            max-height: 720px;
-            background-image: 
-            url(../images/roompage/roompage-hero-desktop.jpg);
-            }
 
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: 
-                url(../images/roompage/roompage-hero-desktop@2x.jpg);
+                background-image:
+                    url(../images/roompage/roompage-hero-tablet@2x.jpg);
             }
+    }
+
+
+    @media screen and (min-width: $tablet) {
+        height: 718px;
+        background-image:
+            url(../images/roompage/roompage-hero-tablet.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/roompage/roompage-hero-tablet@2x.jpg);
+            }
+    }
+
+
+
+    @media screen and (min-width: $desktop) {
+        max-height: 720px;
+        max-width: 1280px;
+        background-image:
+            url(../images/roompage/roompage-hero-desktop.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/roompage/roompage-hero-desktop@2x.jpg);
+            }
+    }
+
+
 
 
     &__gradient {
