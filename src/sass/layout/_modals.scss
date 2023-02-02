@@ -31,6 +31,12 @@
     width: 100%;
     border-radius: 4px;
 
+    @media (max-height: 500px) {
+        overflow: scroll;
+        .modal::-webkit-scrollbar {
+        width: 0;
+    }}
+
     @media (min-width: 780px) {
         padding: 60px;
     }
