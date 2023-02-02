@@ -6,16 +6,12 @@
     position: absolute;
     top: 0;
     left:0;
+   
 
     &__container {
         display: flex;
         align-items: center;
-        // @media screen and (min-width: $mobile) {
-        //     display: flex;
-        //     align-items: center;
-
-        // }
-      
+     
     }
 
     &__nav {
@@ -136,9 +132,12 @@
     } 
 
     &__phone-icon {
-        fill: currentColor;
-       
-        margin: 28px 0 12px 0;
+        display: none;
+        @media screen and (min-width: $mobile){
+          display:block;
+          fill: currentColor;
+           margin: 28px 0 12px 0;
+        }
         
         @media screen and (min-width: $tablet) {
             margin: 0;
