@@ -1,6 +1,5 @@
 .hotel-details {
   position: relative;
-  height: 735px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url('../images/homepage/bg-iphone.jpg');
   width: 100%;
@@ -68,6 +67,7 @@
     max-width: 1024px;
     padding-left: 47px;
     padding-right: 47px;
+    height: 620px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -166,13 +166,13 @@
 .hotel_details__slider-wrapper {
   height: 274px;
   @media screen and (min-width: 1024px) {
-    height: 402px;
+    height: 270px;
     width: 662px;
     margin-bottom: 0;
     margin-left: -12px;
   }
   @media screen and (min-width: 1280px) {
-    height: 476px;
+    height: 270px;
     width: 874px;
     margin-left: -33px;
   }
@@ -183,9 +183,11 @@
 // }
 
 .img-wrap {
-  max-width: 100%;
+  // max-width: 100%;
+  width: 270px;
+  object-fit: cover;
   display: block;
-  height: auto;
+  height: 270px;
 }
 
 .det-hot__swiper-btns {
@@ -240,8 +242,13 @@
   padding: 14px 0px;
 }
 
-.flex {
+.swiper-button__container {
   @media screen and (min-width: 1024px) {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
     display: flex;
+    gap: 18px;
+    height: 270px;
   }
 }

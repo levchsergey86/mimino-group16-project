@@ -1,4 +1,8 @@
 .det-rest {
+
+  background-color: $second-background-color;
+
+  &__container {
     padding-top: 24px;
     padding-bottom: 40px;
 
@@ -16,7 +20,7 @@
   
       @media screen and (min-width: $desktop) {
   
-        max-width: 1600px;
+        max-width: $desktop;
   
         }
 
@@ -87,6 +91,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
 
 
     &__logo {
@@ -206,6 +212,8 @@
         margin-left: 25px;
         margin-bottom: 32px;
 
+        overflow: hidden;
+
         @media screen and (min-width: $tablet) {
 
             width: 662px;
@@ -294,6 +302,12 @@
         
                   
               }
+    }
+
+    &__img--cover {
+      width: 270px;
+      height: 270px;
+      object-fit: cover;
     }
 }
 
