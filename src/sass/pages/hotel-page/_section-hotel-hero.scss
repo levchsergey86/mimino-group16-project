@@ -1,4 +1,12 @@
 .hotel-hero{
+
+    background-color: $main-background-color;
+
+
+}
+
+.hotel-hero__background {
+
     background-color: $overlay-hero-color;
     background-image:linear-gradient($overlay-hero-color,$overlay-hero-color), url(../images/hotel-page/bg-hotel-hero-mob.jpg); 
     background-repeat: no-repeat;
@@ -43,6 +51,7 @@
             }
         }
     }
+
 }
 
 .hotel-hero__container{
@@ -165,10 +174,14 @@
 .hotel-hero__social-list {
     position: absolute;  
     left: 0;
-    bottom: -60px;
+    bottom: -105px;
     display: flex;
     align-items: center;
     gap: 23px;
+
+    @media screen and (min-width: $mobile) {
+        bottom: -90px;
+    }
     @media screen and (min-width: $tablet) {
         bottom: -302px;
         left: 0;
