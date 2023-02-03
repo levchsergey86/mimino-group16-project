@@ -9,7 +9,17 @@
     @media screen and (min-width: $tablet) {
 
         padding-top: 120px;
+
+        padding-bottom: 32px;
+
         overflow: visible;
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+
+        padding-bottom: 50px;
+
         
     }
 
@@ -78,6 +88,8 @@
 
         @media screen and (min-width: $tablet) {
 
+            margin-bottom: 0;
+
             max-width: 439px;
 
             font-size: 16px;
@@ -103,6 +115,9 @@
         &:nth-child(2n + 1) {
 
             @media screen and (min-width: $tablet) {
+
+                margin-bottom: 0;
+
                 display: flex;
                 
             }
@@ -134,13 +149,21 @@
         &:nth-child(2n) {
             display: flex;
             flex-direction: row-reverse;
+          
+            @media screen and (min-width: $tablet) {
+
+                margin-bottom: 0;
+
+                
+            }
+           
         }
 
         &:nth-child(2n) .about-rest__paragraph {
 
             display: flex;
 
-            align-items: center;
+            padding-top: 70px;
 
             margin-left: 20px;
             max-width: 163px;
@@ -151,6 +174,8 @@
               max-width: 312px;
               margin-right: 220px;
               margin-left: 48px;
+
+              padding-top: 180px;
                 
             }
 
@@ -158,6 +183,8 @@
                 
                 margin-right: 306px;
                 margin-left: 32px;
+
+                padding-top: 121px;
                   
               }
         }
@@ -168,15 +195,13 @@
 
             @media screen and (min-width: $tablet) {
                 
-
-
-                margin-top: -48px;
+                margin-top: -16px;
                   
               }
 
               @media screen and (min-width: $desktop) {
 
-                margin-top: -97px;
+                margin-top: -65px;
                       
                   }
         }
@@ -221,12 +246,16 @@
         @media screen and (min-width: $tablet) {
     
             margin-left: 331px;
+
+            margin-top: 32px;
                   
               }
               
         @media screen and (min-width: $desktop) {
     
             margin-left: 445px;
+
+            margin-top: 36px;
                   
               }
     
@@ -254,7 +283,7 @@
             width: 428px;
     
             margin-left: 489px;
-            margin-top: -60px;
+            margin-top: -28px;
                   
               }
     
@@ -263,7 +292,7 @@
                 width: 548px;
     
                 margin-left: 562px;
-                margin-top: -179px;
+                margin-top: -147px;
                       
              }
         
