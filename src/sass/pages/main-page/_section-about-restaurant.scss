@@ -192,6 +192,9 @@
         &:nth-child(2n) .about-rest__image {
 
             z-index: 0;
+            height: 100%;
+
+
 
             @media screen and (min-width: $tablet) {
                 
@@ -221,7 +224,7 @@
 
     &__img--border {
         
-        border-radius: 2px;
+        border-radius: 2px;  
     
     }
 
