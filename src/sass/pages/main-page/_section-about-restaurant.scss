@@ -162,13 +162,28 @@
         &:nth-child(2n) .about-rest__paragraph {
 
             display: flex;
-
-            padding-top: 70px;
-
             margin-left: 20px;
-            max-width: 163px;
+            max-width: 120px;
 
             color: $second-text-color;
+
+            @media screen and (min-width: $mobile) {
+
+                padding-top: 70px;
+
+                margin-left: 20px;
+                max-width: 163px;
+                  
+              }
+            
+            @media screen and (min-width: $tablet) {
+                max-width: 312px;
+                margin-right: 220px;
+                margin-left: 48px;
+  
+                padding-top: 180px;
+                  
+              }
 
             @media screen and (min-width: $tablet) {
               max-width: 312px;
