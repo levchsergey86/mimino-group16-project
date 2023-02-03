@@ -66,8 +66,8 @@
 
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
-    padding-left: 47px;
-    padding-right: 47px;
+    // padding-left: 47px;
+    // padding-right: 47px;
     height: 620px;
   }
 
@@ -203,13 +203,13 @@
   margin-right: 40px;
   @media screen and (min-width: 1024px) {
     height: 270px;
-    // width: 662px;
+    width: 662px;
     margin-bottom: 0;
     margin-left: -12px;
   }
   @media screen and (min-width: 1280px) {
     height: 270px;
-    // width: 874px;
+    width: 874px;
     margin-left: -33px;
   }
 }
