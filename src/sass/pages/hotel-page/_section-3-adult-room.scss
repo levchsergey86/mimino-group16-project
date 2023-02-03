@@ -38,14 +38,6 @@
 
         }
 
-        .swiper {
-            left: 130px;
-            // left: 30%;
-
-            @include for-size(tablet) {
-                left: initial;
-            }
-        }
 
         .hotel-slider__buttons {
 
@@ -103,14 +95,7 @@
     }
 }
 
-.swiper {
-    right: 130px;
 
-
-    @include for-size(tablet) {
-        right: initial;
-    }
-}
 
 .hotel-list__item-wrapper {
     @include for-size(tablet) {

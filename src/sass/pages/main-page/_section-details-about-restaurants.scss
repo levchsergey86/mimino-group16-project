@@ -2,6 +2,7 @@
 
   background-color: $second-background-color;
 
+
   &__container {
     padding-top: 24px;
     padding-bottom: 40px;
@@ -13,7 +14,7 @@
     @media screen and (min-width: $tablet) {
 
         padding-top: 48px;
-
+        max-height: 620px;
         max-width: $tablet;
         }
    
@@ -21,6 +22,7 @@
       @media screen and (min-width: $desktop) {
   
         max-width: $desktop;
+        
   
         }
 
@@ -157,7 +159,7 @@
     &__paragraph {
         max-width: 259px;
 
-        margin-bottom: 48px;
+       
 
         font-family: 'Montserrat';
         font-style: normal;
@@ -170,7 +172,7 @@
 
         @media screen and (min-width: $tablet) {
 
-            margin-bottom: 40px;
+            
 
             max-width: 610px;
 
@@ -189,11 +191,13 @@
     &__header {
         margin-left: 125px;
 
-
+        margin-bottom: 48px;
 
         @media screen and (min-width: $tablet) {
 
             margin-left: 231px;
+
+            margin-bottom: 40px;
             
             }
        
@@ -217,7 +221,9 @@
         @media screen and (min-width: $tablet) {
 
             width: 662px;
-    
+
+            margin-bottom: 0;
+            
             margin-left: 0;
             margin-right: 3px;
                   
@@ -299,7 +305,7 @@
               
         @media screen and (min-width: $desktop) {
     
-        
+          
                   
               }
     }
