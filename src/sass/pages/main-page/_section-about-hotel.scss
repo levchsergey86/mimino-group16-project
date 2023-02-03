@@ -215,11 +215,16 @@
         &__swiper-box {
             width: 515px;
             overflow: hidden;
+            margin-left: -269px;
+            @media screen and (min-width: $mobile) {
+                    margin-left: -176px;
+                }
+
 
             @media screen and (min-width: $tablet) {
                 width: 428px;
                 margin-top: -24px;
-                margin-right: 0;
+                margin-left: 0;
             }
 
             @media screen and (min-width: $desktop) {
@@ -228,14 +233,21 @@
             }
         }
         
+        
         &__swiper-button-list {
             display: flex;
             gap: 33px;
             justify-content: flex-start;
             margin-top: 20px;
-
+            margin-left: 269px;
+            @media screen and (min-width: $mobile) {
+                    margin-left: 176px;
+            
+                }
+                
             @media screen and (min-width: $tablet) {
                 margin-top: 32px;
+                margin-left: 0;
 
             }
 
