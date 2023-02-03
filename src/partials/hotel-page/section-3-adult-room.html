@@ -1,21 +1,29 @@
-<section class="hotel-page">
+<section class="hotel">
 
-    <ul class="room-list">
-        <li class="room-list__item">
+
+    <ul class="hotel-list">
+        <!-- hotel-list -->
+
+        <li class="hotel-list__item">
             <div class="container">
-                <div class="wrapper">
-                    <div class="room-list__text">
+
+                <div class="hotel-list__item-wrapper">
+                    <!-- wrapper -->
+                    <div class="hotel-list__item-text">
+                        <!-- hotel-list__text -->
                         <p class="section-subtitle">Amet minim mollit non</p>
                         <div class="logo">MIMIHO</div>
                         <h2 class="section-title">Двомісний номер <span class="lower">люкс</span></h2>
                         <p class="section-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint.
-                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                            nostrud
                             amet.
                         </p>
                     </div>
-                    <div class="room-list__image">
+                    <div class="hotel-list__item-image">
+                        <!-- hotel-list__image -->
                         <picture>
                             <source
                                 srcset="/src/images/hotel-page/modern-studio-apartment-design-with-bedroom-living-space-mobile.jpg 1x, /src/images/hotel-page/modern-studio-apartment-design-with-bedroom-living-space-mobile@2x.jpg 2x"
@@ -33,86 +41,142 @@
                     </div>
                 </div>
 
-                <div class="wrapper">
-                    <div class="room-list__slider">
-                        <ul class="room-list__item-slider">
-                            <li>
-                                <div class="room-list__item-image">
-                                    <picture>
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
-                                            media="(max-width: 1023px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
-                                            media="(min-width: 1024px) and (max-width: 1279px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
-                                            media="(min-width: 1280px)">
-                                        <img class=""
-                                            src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
-                                            alt="Умивальник">
-                                    </picture>
-                                </div>
+                <div class="hotel-list__item-wrapper">
+                    <!-- wrapper -->
+                    <div class="hotel-slider" data-slider="about-rest-slider">
+                        <!-- hotel-list__slider -->
+                        <div class="swiper">
+                            <ul class="hotel-slider__list swiper-wrapper">
+                                <!-- hotel-list__item-slider "hotel-slider"-->
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <!-- "hotel-list__item-image" -->
 
-                            </li>
-                            <li>
-                                <div class="room-list__item-image">
-                                    <picture>
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
-                                            media="(max-width: 1023px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
-                                            media="(min-width: 1024px) and (max-width: 1279px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
-                                            media="(min-width: 1280px)">
-                                        <img class=""
-                                            src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
-                                            alt="Горня чаю">
-                                    </picture>
-                                </div>
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
+                                                alt="Умивальник">
+                                        </picture>
+                                    </div>
 
-                            </li>
-                        </ul>
-                        <div class="room-list__button-slider">
-                            <button class="room-list__button-prev arrow-swiper-prev swiper-button-disabled"
-                                type="button">
-                                <svg class="room-list__button-prev_icon" aria-label="">
-                                    <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-left"></use>
-                                </svg>
-                            </button>
-                            <button class="room-list__button-next arrow-swiper-next" type="button">
-                                <svg class="room-list__button-next_icon" aria-label="">
-                                    <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-right"></use>
-                                </svg>
-                            </button>
+                                </li>
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
+                                                alt="Горня чаю">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                                <li class="hotel-slider__item swiper-slide swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <!-- "hotel-list__item-image" -->
+
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
+                                                alt="Умивальник">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
+                                                alt="Горня чаю">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <div class="hotel-slider__buttons">
+                                <!-- "hotel-list__button-slider" -->
+                                <button class="hotel-slider__button arrow-swiper-prev" type="button">
+                                    <!-- hotel-list__button-prev -->
+                                    <svg class="hotel-slider__button-icon" aria-label="">
+                                        <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-left"></use>
+                                    </svg>
+                                </button>
+                                <button class="hotel-slider__button arrow-swiper-next" type="button">
+                                    <!-- hotel-list__button-next -->
+                                    <svg class="hotel-slider__button-icon" aria-label="">
+                                        <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
+
                     </div>
-                    <div class="room-list__button-more">
-                        <a class="room-list__button-detail button" href="/src/room.html">Детальніше</a>
-                        <button class="room-list__button-prices button" type="button" data-modal-open-price>Переглянути
+                    <div class="hotel-list__button-more">
+                        <a class="hotel-list__button-detail button" href="/src/room.html">Детальніше</a>
+                        <button class="hotel-list__button-prices button" type="button" data-modal-open-price>Переглянути
                             ціни</button>
                     </div>
                 </div>
 
             </div>
         </li>
-        <li class="room-list__item">
+
+        <li class="hotel-list__item">
             <div class="container">
-                <div class="wrapper">
-                    <div class="room-list__text">
+
+                <div class="hotel-list__item-wrapper">
+                    <!-- wrapper -->
+                    <div class="hotel-list__item-text">
+                        <!-- hotel-list__text -->
                         <p class="section-subtitle">Amet minim mollit non</p>
                         <div class="logo">MIMIHO</div>
-                        <h2 class="section-title">Трьохмісний номер</h2>
+                        <h2 class="section-title">Трьохмісний номер</span></h2>
                         <p class="section-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint.
-                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                            nostrud
                             amet.
                         </p>
                     </div>
-                    <div class="room-list__image">
+                    <div class="hotel-list__item-image">
+                        <!-- hotel-list__image -->
                         <picture>
                             <source
                                 srcset="/src/images/hotel-page/modern-studio-apartment-design-with-bedroom-living-space-mobile.jpg 1x, /src/images/hotel-page/modern-studio-apartment-design-with-bedroom-living-space-mobile@2x.jpg 2x"
@@ -130,86 +194,142 @@
                     </div>
                 </div>
 
-                <div class="wrapper">
-                    <div class="room-list__slider">
-                        <ul class="room-list__item-slider">
-                            <li>
-                                <div class="room-list__item-image">
-                                    <picture>
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
-                                            media="(max-width: 1023px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
-                                            media="(min-width: 1024px) and (max-width: 1279px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
-                                            media="(min-width: 1280px)">
-                                        <img class=""
-                                            src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
-                                            alt="Умивальник">
-                                    </picture>
-                                </div>
+                <div class="hotel-list__item-wrapper">
+                    <!-- wrapper -->
+                    <div class="hotel-slider" data-slider="about-rest-slider">
+                        <!-- hotel-list__slider -->
+                        <div class="swiper">
+                            <ul class="hotel-slider__list swiper-wrapper">
+                                <!-- hotel-list__item-slider "hotel-slider"-->
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <!-- "hotel-list__item-image" -->
 
-                            </li>
-                            <li>
-                                <div class="room-list__item-image">
-                                    <picture>
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
-                                            media="(max-width: 1023px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
-                                            media="(min-width: 1024px) and (max-width: 1279px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
-                                            media="(min-width: 1280px)">
-                                        <img class=""
-                                            src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
-                                            alt="Горня чаю">
-                                    </picture>
-                                </div>
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
+                                                alt="Умивальник">
+                                        </picture>
+                                    </div>
 
-                            </li>
-                        </ul>
-                        <div class="room-list__button-slider">
-                            <button class="room-list__button-prev arrow-swiper-prev swiper-button-disabled"
-                                type="button">
-                                <svg class="room-list__button-prev_icon" aria-label="">
-                                    <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-left"></use>
-                                </svg>
-                            </button>
-                            <button class="room-list__button-next arrow-swiper-next" type="button">
-                                <svg class="room-list__button-next_icon" aria-label="">
-                                    <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-right"></use>
-                                </svg>
-                            </button>
+                                </li>
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
+                                                alt="Горня чаю">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                                <li class="hotel-slider__item swiper-slide swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <!-- "hotel-list__item-image" -->
+
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
+                                                alt="Умивальник">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
+                                                alt="Горня чаю">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <div class="hotel-slider__buttons">
+                                <!-- "hotel-list__button-slider" -->
+                                <button class="hotel-slider__button arrow-swiper-prev" type="button">
+                                    <!-- hotel-list__button-prev -->
+                                    <svg class="hotel-slider__button-icon" aria-label="">
+                                        <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-left"></use>
+                                    </svg>
+                                </button>
+                                <button class="hotel-slider__button arrow-swiper-next" type="button">
+                                    <!-- hotel-list__button-next -->
+                                    <svg class="hotel-slider__button-icon" aria-label="">
+                                        <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
+
                     </div>
-                    <div class="room-list__button-more">
-                        <a class="room-list__button-detail button" href="/src/room.html">Детальніше</a>
-                        <button class="room-list__button-prices button" type="button" data-modal-open-price>Переглянути
+                    <div class="hotel-list__button-more">
+                        <a class="hotel-list__button-detail button" href="/src/room.html">Детальніше</a>
+                        <button class="hotel-list__button-prices button" type="button" data-modal-open-price>Переглянути
                             ціни</button>
                     </div>
                 </div>
 
             </div>
         </li>
-        <li class="room-list__item">
+
+        <li class="hotel-list__item">
             <div class="container">
-                <div class="wrapper">
-                    <div class="room-list__text">
+
+                <div class="hotel-list__item-wrapper">
+                    <!-- wrapper -->
+                    <div class="hotel-list__item-text">
+                        <!-- hotel-list__text -->
                         <p class="section-subtitle">Amet minim mollit non</p>
                         <div class="logo">MIMIHO</div>
-                        <h2 class="section-title">Двомісний номер</h2>
+                        <h2 class="section-title">Двомісний номер</span></h2>
                         <p class="section-description">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint.
-                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                            nostrud
                             amet.
                         </p>
                     </div>
-                    <div class="room-list__image">
+                    <div class="hotel-list__item-image">
+                        <!-- hotel-list__image -->
                         <picture>
                             <source
                                 srcset="/src/images/hotel-page/modern-studio-apartment-design-with-bedroom-living-space-mobile.jpg 1x, /src/images/hotel-page/modern-studio-apartment-design-with-bedroom-living-space-mobile@2x.jpg 2x"
@@ -227,70 +347,126 @@
                     </div>
                 </div>
 
-                <div class="wrapper">
-                    <div class="room-list__slider">
-                        <ul class="room-list__item-slider">
-                            <li>
-                                <div class="room-list__item-image">
-                                    <picture>
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
-                                            media="(max-width: 1023px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
-                                            media="(min-width: 1024px) and (max-width: 1279px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
-                                            media="(min-width: 1280px)">
-                                        <img class=""
-                                            src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
-                                            alt="Умивальник">
-                                    </picture>
-                                </div>
+                <div class="hotel-list__item-wrapper">
+                    <!-- wrapper -->
+                    <div class="hotel-slider" data-slider="about-rest-slider">
+                        <!-- hotel-list__slider -->
+                        <div class="swiper">
+                            <ul class="hotel-slider__list swiper-wrapper">
+                                <!-- hotel-list__item-slider "hotel-slider"-->
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <!-- "hotel-list__item-image" -->
 
-                            </li>
-                            <li>
-                                <div class="room-list__item-image">
-                                    <picture>
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
-                                            media="(max-width: 1023px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
-                                            media="(min-width: 1024px) and (max-width: 1279px)">
-                                        <source
-                                            srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
-                                            media="(min-width: 1280px)">
-                                        <img class=""
-                                            src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
-                                            alt="Горня чаю">
-                                    </picture>
-                                </div>
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
+                                                alt="Умивальник">
+                                        </picture>
+                                    </div>
 
-                            </li>
-                        </ul>
-                        <div class="room-list__button-slider">
-                            <button class="room-list__button-prev arrow-swiper-prev swiper-button-disabled"
-                                type="button">
-                                <svg class="room-list__button-prev_icon" aria-label="">
-                                    <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-left"></use>
-                                </svg>
-                            </button>
-                            <button class="room-list__button-next arrow-swiper-next" type="button">
-                                <svg class="room-list__button-next_icon" aria-label="">
-                                    <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-right"></use>
-                                </svg>
-                            </button>
+                                </li>
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
+                                                alt="Горня чаю">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                                <li class="hotel-slider__item swiper-slide swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <!-- "hotel-list__item-image" -->
+
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop.jpg 1x, /src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/arrangement-pf-bathroom-elements-self-care-mobile.jpg"
+                                                alt="Умивальник">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                                <li class="hotel-slider__item swiper-slide">
+                                    <div class="hotel-slider__item-image swiper-inner">
+                                        <picture>
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile@2x.jpg 2x"
+                                                media="(max-width: 1023px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-tablet@2x.jpg 2x"
+                                                media="(min-width: 1024px) and (max-width: 1279px)">
+                                            <source
+                                                srcset="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop.jpg 1x, /src/images/hotel-page/cup-tea-stands-wooden-windowsill-desktop@2x.jpg 2x"
+                                                media="(min-width: 1280px)">
+                                            <img class=""
+                                                src="/src/images/hotel-page/cup-tea-stands-wooden-windowsill-mobile.jpg"
+                                                alt="Горня чаю">
+                                        </picture>
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <div class="hotel-slider__buttons">
+                                <!-- "hotel-list__button-slider" -->
+                                <button class="hotel-slider__button arrow-swiper-prev" type="button">
+                                    <!-- hotel-list__button-prev -->
+                                    <svg class="hotel-slider__button-icon" aria-label="">
+                                        <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-left"></use>
+                                    </svg>
+                                </button>
+                                <button class="hotel-slider__button arrow-swiper-next" type="button">
+                                    <!-- hotel-list__button-next -->
+                                    <svg class="hotel-slider__button-icon" aria-label="">
+                                        <use class="arrow-swiper" href="./images/icons.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
+
                     </div>
-                    <div class="room-list__button-more">
-                        <a class="room-list__button-detail button" href="/src/room.html">Детальніше</a>
-                        <button class="room-list__button-prices button" type="button" data-modal-open-price>Переглянути
+                    <div class="hotel-list__button-more">
+                        <a class="hotel-list__button-detail button" href="/src/room.html">Детальніше</a>
+                        <button class="hotel-list__button-prices button" type="button" data-modal-open-price>Переглянути
                             ціни</button>
                     </div>
                 </div>
+
             </div>
         </li>
+
+
+
     </ul>
+
+    </div>
 
 </section>
