@@ -1,4 +1,8 @@
+main {
+  background-color: #f0ecd6;
+}
 .hotel-details {
+  background-color: #f0ecd6;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url('../images/homepage/bg-iphone.jpg');
@@ -56,7 +60,7 @@
 
 .hotel-details__container {
   margin: 0 auto;
-  padding: 24px 15px 40px;
+  // padding: 24px 15px 40px;
 
   @media screen and (min-width: 414px) {
     max-width: 414px;
@@ -242,7 +246,7 @@
 
 .swiper-button__container {
   @media screen and (min-width: 1024px) {
-    width: 1024px;
+    width: 930px;
     padding-left: 47px;
     padding-right: 47px;
     display: flex;
