@@ -66,8 +66,8 @@
 
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
-    padding-left: 47px;
-    padding-right: 47px;
+    // padding-left: 47px;
+    // padding-right: 47px;
     height: 620px;
   }
 
@@ -79,8 +79,9 @@
 }
 
 .hotel-details__wrapper {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1023px) {
     padding-top: 24px;
+    padding-bottom: 47px;
     padding-bottom: 40px;
     max-width: 414px;
     margin: 0px auto;
@@ -135,7 +136,25 @@
   padding-top: 24px;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-bottom: 20px;
+  margin-left: 201px;
+  font-family: Montserrat, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  display: flex;
+  @media screen and (min-width: 1024px) {
+    padding-left: 48px;
+    margin-bottom: 8px;
+    margin-left: 740px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 855px;
+  }
+}
+
+.hotel-details__text {
+  color: #fff;
   margin-left: 201px;
   font-family: Montserrat, sans-serif;
   font-size: 20px;
@@ -143,11 +162,12 @@
   line-height: 1.2;
   display: flex;
   @media screen and (min-width: 1024px) {
-    padding-left: 48px;
+    font-size: 24px;
     margin-bottom: 8px;
-    margin-left: 659px;
+    margin-left: 65px;
     font-size: 24px;
     line-height: 1.16;
+    margin-left: 659px;
   }
   @media screen and (min-width: 1280px) {
     margin-left: 855px;
@@ -180,6 +200,7 @@
 
 .hotel_details__slider-wrapper {
   height: 274px;
+  margin-right: 40px;
   @media screen and (min-width: 1024px) {
     height: 270px;
     width: 662px;
@@ -271,5 +292,7 @@
 
   .det-hot-btn {
     margin-right: 43px;
+  }
+  .swiper-slide {
   }
 }
