@@ -70,10 +70,9 @@
         &__content {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-
             margin-bottom: 28px;
 
+            
             @media screen and (min-width: $tablet) {
                 justify-content: center;
                 margin-bottom: 0;
@@ -82,15 +81,24 @@
             @media screen and (min-width: $desktop) {
                 margin-top: 120px;
             }
-
-            @media screen and (max-width: 1023px) {
-                &--right {
-                    margin-left: 143px;
+            &--right {
+                margin-left: 80px;
+                @media screen and (min-width: $mobile) {
+                        margin-left: 143px;
+                }
+                @media screen and (min-width: $tablet) {
+                    margin-left: 0;
+                }
+                @media screen and (min-width: $desktop) {
+                    margin-top: 120px;
                 }
             }
         }
 
         &__content--brown {
+            @media screen and (max-width: 413px) {
+                margin-top: -30px;
+            }
             @media screen and (min-width: $desktop) {
                 margin-top: 169px;
             }
@@ -207,11 +215,16 @@
         &__swiper-box {
             width: 515px;
             overflow: hidden;
+            margin-left: -269px;
+            @media screen and (min-width: $mobile) {
+                    margin-left: -176px;
+                }
+
 
             @media screen and (min-width: $tablet) {
                 width: 428px;
                 margin-top: -24px;
-                margin-right: 0;
+                margin-left: 0;
             }
 
             @media screen and (min-width: $desktop) {
@@ -220,14 +233,21 @@
             }
         }
         
+        
         &__swiper-button-list {
             display: flex;
             gap: 33px;
             justify-content: flex-start;
             margin-top: 20px;
-
+            margin-left: 269px;
+            @media screen and (min-width: $mobile) {
+                    margin-left: 176px;
+            
+                }
+                
             @media screen and (min-width: $tablet) {
                 margin-top: 32px;
+                margin-left: 0;
 
             }
 

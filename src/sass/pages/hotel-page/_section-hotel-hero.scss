@@ -1,5 +1,4 @@
 .hotel-hero{
-    position: relative;
     background-color: $overlay-hero-color;
     background-image:linear-gradient($overlay-hero-color,$overlay-hero-color), url(../images/hotel-page/bg-hotel-hero-mob.jpg); 
     background-repeat: no-repeat;
@@ -7,6 +6,7 @@
     background-size: cover;
 
     min-height: 740px;
+    max-width: 1280px;
     margin: 0 auto;
     padding-top: 181px;
     padding-bottom: 102px;
@@ -20,9 +20,7 @@
         }
     }
     
-    @media screen and (min-width: $tablet) {
-        min-height: 720px;
-        padding-top: 188px;
+    @media screen and (min-width: $mobile) {
         background-image:linear-gradient($overlay-hero-color,$overlay-hero-color), url(../images/hotel-page/bg-hotel-hero-tab.jpg);
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -33,8 +31,9 @@
         }
     }
 
-    @media screen and (min-width: $desktop) {
-        max-width: 1600px;
+    @media screen and (min-width: $tablet) {
+        min-height: 720px;
+        padding-top: 188px;
         background-image:linear-gradient($overlay-hero-color,$overlay-hero-color), url(../images/hotel-page/bg-hotel-hero-des.jpg);
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -46,16 +45,33 @@
     }
 }
 
-.hotel-hero__title {       
+.hotel-hero__container{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    @media screen and (min-width: $mobile) {
+        width: 384px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 930px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 1110px;
+    }
+}
+
+.hotel-hero__title {
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 80px;
     line-height: 1.07;
     letter-spacing: 0.3em;
     color: $primary-color;
     margin-bottom: 32px;
-    
+    @media screen and (min-width: $mobile) {
+        font-size: 96px;
+    }
     @media screen and (min-width: $tablet) {
         font-size: 128px;
     }
@@ -77,8 +93,8 @@
 
 .hotel-hero__address-box{
     position: absolute;
-    top: 64px;
-    right: 15px;
+    top: -117px;
+    right: 0;
     display: flex;
     padding: 8px 6px;
     max-height: 47px;
@@ -92,8 +108,12 @@
         padding: 10px 8px;
         max-width: 285px;
         max-height: 56px;
-        left: 45px;
-        top: 83%;
+        top: auto;
+        left: 0;
+        bottom: -218px;
+    }
+    @media screen and (min-width: $desktop) {
+        bottom: -242px;
     }
     
 }
@@ -133,25 +153,25 @@
         position: absolute; 
         flex-direction: row;
         flex-wrap: wrap;
-        bottom: 64px;
-        right: 47px;
+        bottom: -226px;
+        right: 0;
         gap: 40px;
     }
     @media screen and (min-width: $desktop) {
-        right: 85px;
+        bottom: -249px;
     }
 }
 
 .hotel-hero__social-list {
     position: absolute;  
-    left: 15px;
-    bottom: 20px;
+    left: 0;
+    bottom: -60px;
     display: flex;
     align-items: center;
     gap: 23px;
     @media screen and (min-width: $tablet) {
-        left: 47px;
-        bottom: 15px;
+        bottom: -302px;
+        left: 0;
     }
 
     @media screen and (min-width: $desktop) {

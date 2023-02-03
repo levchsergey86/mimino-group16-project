@@ -1,4 +1,8 @@
 .hotel-details {
+  background-color: #f0ecd6;
+}
+
+.hotel-details__container {
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url('../images/homepage/bg-iphone.jpg');
@@ -52,11 +56,9 @@
         url('../images/homepage/bg-des-2x.jpg');
     }
   }
-}
 
-.hotel-details__container {
   margin: 0 auto;
-  padding: 24px 15px 40px;
+  // padding: 24px 15px 40px;
 
   @media screen and (min-width: 414px) {
     max-width: 414px;
@@ -183,7 +185,9 @@
 // }
 
 .img-wrap {
-  max-width: 100%;
+  // max-width: 100%;
+  width: 270px;
+  object-fit: cover;
   display: block;
   height: 270px;
 }
@@ -215,6 +219,7 @@
     // left: 741px;
     // top: 408px;
     // position: absolute;
+    margin-top: 150px;
   }
   @media screen and (min-width: 1280px) {
     // bottom: 95px;
@@ -223,6 +228,7 @@
     bottom: 40px;
     right: 89px;
     height: 476;
+    margin-top: 150px;
   }
 }
 
@@ -242,7 +248,7 @@
 
 .swiper-button__container {
   @media screen and (min-width: 1024px) {
-    width: 1024px;
+    width: 930px;
     padding-left: 47px;
     padding-right: 47px;
     display: flex;

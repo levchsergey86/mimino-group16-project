@@ -1,4 +1,9 @@
 .det-rest {
+
+  background-color: $second-background-color;
+
+
+  &__container {
     padding-top: 24px;
     padding-bottom: 40px;
 
@@ -9,14 +14,15 @@
     @media screen and (min-width: $tablet) {
 
         padding-top: 48px;
-
+        max-height: 620px;
         max-width: $tablet;
         }
    
   
       @media screen and (min-width: $desktop) {
   
-        max-width: 1600px;
+        max-width: $desktop;
+        
   
         }
 
@@ -87,6 +93,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
 
 
     &__logo {
@@ -151,7 +159,7 @@
     &__paragraph {
         max-width: 259px;
 
-        margin-bottom: 48px;
+       
 
         font-family: 'Montserrat';
         font-style: normal;
@@ -164,7 +172,7 @@
 
         @media screen and (min-width: $tablet) {
 
-            margin-bottom: 40px;
+            
 
             max-width: 610px;
 
@@ -183,11 +191,13 @@
     &__header {
         margin-left: 125px;
 
-
+        margin-bottom: 48px;
 
         @media screen and (min-width: $tablet) {
 
             margin-left: 231px;
+
+            margin-bottom: 40px;
             
             }
        
@@ -206,10 +216,14 @@
         margin-left: 25px;
         margin-bottom: 32px;
 
+        overflow: hidden;
+
         @media screen and (min-width: $tablet) {
 
             width: 662px;
-    
+
+            margin-bottom: 0;
+            
             margin-left: 0;
             margin-right: 3px;
                   
@@ -291,9 +305,15 @@
               
         @media screen and (min-width: $desktop) {
     
-        
+          
                   
               }
+    }
+
+    &__img--cover {
+      width: 270px;
+      height: 270px;
+      object-fit: cover;
     }
 }
 
