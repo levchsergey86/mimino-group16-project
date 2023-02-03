@@ -200,15 +200,16 @@
 
 .hotel_details__slider-wrapper {
   height: 274px;
+  margin-right: 40px;
   @media screen and (min-width: 1024px) {
     height: 270px;
-    width: 662px;
+    // width: 662px;
     margin-bottom: 0;
     margin-left: -12px;
   }
   @media screen and (min-width: 1280px) {
     height: 270px;
-    width: 874px;
+    // width: 874px;
     margin-left: -33px;
   }
 }
@@ -291,5 +292,7 @@
 
   .det-hot-btn {
     margin-right: 43px;
+  }
+  .swiper-slide {
   }
 }
