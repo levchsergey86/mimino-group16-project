@@ -148,6 +148,7 @@
 
     &__phone-number {
         display: none;
+        white-space: nowrap;
        
 
         @media screen and (min-width: $tablet) {
