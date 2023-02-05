@@ -19,6 +19,7 @@ function swiperSlider() {
                 slidesPerView: 2, // кількість слайдерів для показу
                 spaceBetween: 25, // відстань між слайдерами
                 loop: true,
+                loopedSlides: 10,
 
                 // кнопки навігації
                 navigation: {
@@ -84,6 +85,7 @@ function swiperSlider() {
                 slidesPerView: 2, // кількість слайдерів для показу
                 spaceBetween: 0, // відстань між слайдерами
                 loop: true,
+                loopedSlides: 10,
 
                 // кнопки навігації
                 navigation: {
