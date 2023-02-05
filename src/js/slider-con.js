@@ -18,6 +18,7 @@ function swiperSlider() {
                 // },
                 slidesPerView: 2, // кількість слайдерів для показу
                 spaceBetween: 25, // відстань між слайдерами
+                loop: true,
 
                 // кнопки навігації
                 navigation: {
@@ -49,6 +50,7 @@ function swiperSlider() {
                     414: {
                         slidesPerView: 2,
                         spaceBetween: 25,
+                        
                     },
                     // when window width is >= 768px
                     1024: {
@@ -81,6 +83,7 @@ function swiperSlider() {
                 // },
                 slidesPerView: 2, // кількість слайдерів для показу
                 spaceBetween: 0, // відстань між слайдерами
+                loop: true,
 
                 // кнопки навігації
                 navigation: {
@@ -122,6 +125,7 @@ function swiperSlider() {
                     1280: {
                         slidesPerView: 3,
                         spaceBetween: 87
+                        
                     }
                 }
 
