@@ -312,9 +312,19 @@
     }
 
     &__img--cover {
-      width: 270px;
-      height: 270px;
-      object-fit: cover;
+
+        width: 274px;
+        height: 270px;
+        object-fit: cover;
+
+
+      @media screen and (min-width: $tablet) {
+    
+        width: 270px;
+       
+                  
+      }
+ 
     }
 }
 

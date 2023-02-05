@@ -83,7 +83,7 @@ function swiperSlider() {
                 //     disableOnInteraction: false,
                 // },
                 slidesPerView: 2, // кількість слайдерів для показу
-                spaceBetween: 0, // відстань між слайдерами
+                spaceBetween: 20, // відстань між слайдерами
                 loop: true,
                 loopedSlides: 10,
 
