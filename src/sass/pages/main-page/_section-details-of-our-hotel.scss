@@ -1,14 +1,20 @@
 .hotel-details {
   background-color: #f0ecd6;
+  
 }
 
 .hotel-details__container {
+  overflow: hidden;
   position: relative;
+  width: 100%;
+  max-width: 414px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  margin: 0px auto;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url('../images/homepage/bg-iphone.jpg');
-  width: 100%;
-  background-position: center center;
-  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -16,11 +22,11 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../images/homepage/bg-iphone-2x.jpg');
   }
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
-  @media screen and (min-width: 414px) and (max-width: 1024px) {
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../images/homepage/bg-iphone.jpg');
     @include retina2x {
@@ -32,7 +38,8 @@
     }
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    padding-top: 48px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../images/homepage/bg-ipad.jpg');
     @include retina2x {
@@ -44,10 +51,12 @@
     }
   }
   @media screen and (min-width: 1280px) {
+    padding-top: 48px;
+    
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../images/homepage/bg-des.jpg');
     max-width: 1280px;
-    margin: 0 auto;
+    // margin: 0 auto;
     @include retina2x {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
@@ -57,7 +66,7 @@
     }
   }
 
-  margin: 0 auto;
+  // margin: 0 auto;
   // padding: 24px 15px 40px;
 
   @media screen and (min-width: 414px) {
@@ -73,21 +82,24 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-    padding-left: 47px;
-    padding-right: 47px;
   }
 }
 
-.hotel-details__wrapper {
-  @media screen and (max-width: 1023px) {
-    padding-top: 24px;
-    padding-bottom: 47px;
-    padding-bottom: 40px;
-    max-width: 414px;
-    margin: 0px auto;
-  }
-  @media screen and (min-width: 1024px) {
-    padding-top: 48px;
+// .hotel-details__wrapper {
+//   @media screen and (max-width: 1023px) {
+    
+//   }
+//   @media screen and (min-width: 1024px) {
+//     padding-top: 48px;
+//   }
+// }
+.hotel-details__info {
+  text-align: left;
+  margin-left: -17px;
+  margin-bottom: 48px;
+@media screen and (min-width: $tablet) {
+  margin-left: 0px;
+  margin-bottom: 40px;
   }
 }
 
@@ -175,19 +187,17 @@
 }
 
 .hotel-details__description {
-  letter-spacing: 0.02em;
-  color: #bababa;
-  max-width: 243px;
-  margin-bottom: 48px;
-  margin-left: 31px;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #bababa;
+  max-width: 243px;
+  margin-left: 31px;
 
   @media screen and (min-width: 1024px) {
     max-width: 549px;
-    margin-bottom: 40px;
     margin-left: 197px;
     font-size: 16px;
   }
@@ -198,19 +208,25 @@
   }
 }
 
-.hotel_details__slider-wrapper {
-  height: 274px;
-  margin-right: 40px;
+.hotel-details__slider-wrapper {
+  // overflow: hidden;
+  margin-left: -300px;
+  width: 568px;
+  margin-bottom: 32px;
+  @media screen and (min-width: $mobile) {
+    margin-left: -209px;
+  }
+
   @media screen and (min-width: 1024px) {
+    // overflow: visible;
     height: 270px;
     width: 662px;
-    margin-bottom: 0;
-    margin-left: -12px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 32px
   }
   @media screen and (min-width: 1280px) {
-    height: 270px;
     width: 874px;
-    margin-left: -33px;
   }
 }
 
@@ -219,43 +235,62 @@
 // }
 
 .img-wrap {
-  // max-width: 100%;
-  width: 270px;
+  width: 274px;
   object-fit: cover;
-  display: block;
   height: 270px;
+  border-radius: 2px;
+  @media screen and (min-width: $tablet) {
+      width: 198px;
+      height: 270px;
+    }
+  @media screen and (min-width: $tablet) {
+    width: 234px;
+    height: 270px;
+  }
 }
 
 .det-hot__swiper-btns {
   display: flex;
   justify-content: flex-end;
-  margin-top: 25px;
+  gap: 32px;
+  margin-right: 10px;
+  margin-top: 24px;
+  fill: $primary-color;
+  @media screen and (min-width: $mobile) {
+      
+      margin-right: 0px;
+  
+    }
+
+  @media screen and (min-width: $tablet) {
+      justify-content: flex-end;
+    }
 }
 
-.slick-prev {
-  background: #ffffff;
-}
+// .slick-prev {
+//   background: #ffffff;
+// }
 
-.slick-next {
-  background: #ffffff;
-}
+// .slick-next {
+//   background: #ffffff;
+// }
 
 .hotel-details__buttons {
   // padding-bottom: 40px;
-  width: 236px;
+  // width: 236px;
   cursor: pointer;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
-  margin: 80px auto 0;
+  gap: 16px;
+  
   display: flex;
-  margin-bottom: 40px;
+  
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     // left: 741px;
     // top: 408px;
     // position: absolute;
-    margin-top: 150px;
+    margin-top: 161px;
   }
   @media screen and (min-width: 1280px) {
     // bottom: 95px;
@@ -265,35 +300,51 @@
     // margin-top: 150px;
   }
 }
-
-.btn-hotel {
+.hotel-details__btn-reserve {
   width: 236px;
-  height: 48px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #f3c653;
-  padding: 14px 0px;
+
 }
+
+.hotel-details__btn-price {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 236px;
+}
+
+// .btn-hotel {
+//   width: 236px;
+//   height: 48px;
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 20px;
+//   text-align: center;
+//   letter-spacing: 0.02em;
+//   color: #f3c653;
+//   padding: 14px 0px;
+// }
 
 .swiper-button__container {
   
-  @media screen and (min-width: 1024px) {
-    width: 930px;
-    padding-left: 47px;
-    padding-right: 47px;
+  @media screen and (min-width: $tablet) {
+    // width: 930px;
+    // padding-left: 47px;
+    // padding-right: 47px;
+    // gap: 18px;
     display: flex;
-    gap: 18px;
     height: 270px;
   }
-
-  .det-hot-btn {
-    margin-right: 43px;
-  }
-  .swiper-slide {
-  }
+    // @media screen and (min-width: $desktop) {
+      
+      
+    // }
 }
+
+//   // .det-hot-btn {
+    
+//   // }
+//   // .swiper-slide {
+//   // }
+// }
