@@ -167,6 +167,14 @@
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+            &::-webkit-calendar-picker-indicator {
+                width:50%;
+                height: 100%;
+            }
+
+           
+            
+
             
             &:hover + .modal__form-field__select__icon {
 
