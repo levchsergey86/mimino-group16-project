@@ -1,6 +1,4 @@
 .hotel {
-    // margin-left: auto;
-    // margin-right: auto;
     background-color: $main-background-color;
     overflow: hidden;
 
@@ -9,10 +7,6 @@
     }
 
     @include for-size(desktop) {}
-}
-
-.hotel-list {
-    // padding: 32px 0;
 }
 
 .hotel-list__item {
@@ -57,12 +51,7 @@
                 margin-left: 60px;
             }
 
-            @media screen and (max-width: 414px) {
-
-
-                // margin-left: 150px;
-
-            }
+            @media screen and (max-width: 414px) {}
 
             @include for-size(tablet) {
                 margin-left: initial;
@@ -80,23 +69,18 @@
 
         }
 
+        .hotel-list__item-image {
+            margin-left: initial;
+        }
+
         @include for-size(tablet) {
             .hotel-list__item-image {
-                // width: 400px;
-                // height: 524px;
-                // margin: 0;
-                // position: relative;
-                // top: -32px;
-                /* right: 65px; */
                 left: 65px;
 
                 @include for-size(desktop) {
                     left: 90px;
                 }
             }
-
-
-
         }
 
     }
@@ -106,20 +90,12 @@
     }
 }
 
-
-
 .hotel-list__item-wrapper {
     @include for-size(tablet) {
         display: flex;
-        // width: 100%;
         justify-content: space-between;
     }
 }
-
-// .hotel-slider__buttons {
-//     justify-content: flex-end;
-// }
-
 
 .section-subtitle {
     margin-bottom: 8px;
@@ -202,9 +178,6 @@
 
     @include for-size(desktop) {
         max-width: 439px;
-        // letter-spacing: .02em;
-        // font-size: 16px;
-        // line-height: 20px;
     }
 }
 
@@ -236,7 +209,6 @@
 .hotel-slider {
     width: 400px;
 
-    // right: 115px;
     @include for-size(tablet) {
         width: 450px;
         margin-right: 60px;
@@ -256,14 +228,10 @@
     }
 }
 
-.hotel-list__slider {}
-
 .hotel-slider__list {
     margin-bottom: 20px;
 
 }
-
-.hotel-slider__item {}
 
 .hotel-slider__item-image {
     width: 194px;
@@ -280,23 +248,9 @@
 }
 
 .hotel-slider__buttons {
-    .room-list__button-slider {
-        // justify-content: normal;
-
-        // @include for-size(tablet) {
-        //     justify-content: flex-end;
-        // }
-
-        // @include for-size(desktop) {}
-    }
-}
-
-.hotel-slider__buttons {
     display: flex;
     margin-bottom: 20px;
     gap: 32px;
-    // justify-content: normal;
-    // justify-content: flex-end;
     justify-content: center;
 
     @include for-size(tablet) {
@@ -305,9 +259,6 @@
 
     @include for-size(desktop) {}
 
-    // @include for-size(tablet) {
-    //     margin-bottom: 0;
-    // }
 }
 
 .hotel-slider__button {
@@ -333,7 +284,6 @@
         margin-top: 45px;
         margin-left: initial;
         margin-right: initial;
-        // gap: 16px;
     }
 
     @include for-size(desktop) {
@@ -345,10 +295,6 @@
     display: block;
     margin-bottom: 16px;
     padding: 14px 64px;
-
-    // @include for-size(tablet) {
-    //     margin-bottom: initial;
-    // }
 }
 
 .hotel-list__button-prices {
